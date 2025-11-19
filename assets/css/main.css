@@ -1,0 +1,117 @@
+:root {
+    --primary: #227093;
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    /* Theme color */
+    --theme: var(--primary);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'EB Garamond', serif;
+}
+
+.simpleParallax {
+    height: 100%;
+}
+
+.font-mincho {
+    font-family: "Zen Old Mincho", serif;
+}
+
+.font-garamond {
+    font-family: Garamond Premier Pro !important;
+}
+
+.featured-swiper .swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 1 !important;
+}
+
+.featured-swiper .swiper-pagination-bullet-active {
+    background: #C4B28C !important;
+}
+
+.tab {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+
+.tab input:checked~.tab__content {
+    max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+    overflow: hidden;
+}
+
+.tab__label,
+.tab__close {
+    display: flex;
+    color: black;
+    background: #C4B28C;
+    cursor: pointer;
+}
+
+.tab__label {
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media (max-width: 767px) {
+    .tab__label {
+        padding: 8px 16px;
+    }
+}
+
+
+.tab input:checked+.tab__label .fa-caret-down {
+    display: none;
+}
+
+.tab__content p {
+    margin: 0;
+    padding: 1rem;
+    background-color: #E1E1E1;
+}
+
+/* Arrow animation */
+.tab input:not(:checked)+.tab__label:hover::after {
+    animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+    25% {
+        transform: rotate(90deg) translate(.25rem);
+    }
+
+    75% {
+        transform: rotate(90deg) translate(-.25rem);
+    }
+}
+
+/* Parallax Fixed Background Optimization */
+.parallax-bg-fixed {
+    will-change: transform;
+    backface-visibility: hidden;
+    transition: transform 0.1s ease-out;
+}
