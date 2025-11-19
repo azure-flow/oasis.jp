@@ -52,37 +52,29 @@ document.addEventListener('DOMContentLoaded', function () {
     // Haumburger Button to open menu on smartphone
 
     const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mainModal = document.getElementById('mainModal');
-    const mainModalPanel = document.getElementById('mainModalPanel');
-    const closeMainModalBtn = document.getElementById('closeMainModalBtn');
+    const menu_modal = document.getElementById('menu_modal');
 
-    function openModal() {
-        mainModal.classList.remove('pointer-events-none', 'opacity-0');
-        mainModal.classList.add('pointer-events-auto', 'opacity-100');
-        mainModalPanel.classList.remove('-translate-y-full');
-        mainModalPanel.classList.add('translate-y-0');
-    }
-    function closeModal() {
-        mainModal.classList.add('opacity-0');
-        mainModal.classList.remove('opacity-100', 'pointer-events-auto');
-        mainModal.classList.add('pointer-events-none');
-        mainModalPanel.classList.add('-translate-y-full');
-        mainModalPanel.classList.remove('translate-y-0');
-
-        document.body.style.overflow = '';
+    function toggleModal() {
+        if (menu_modal.classList.contains('opacity-0')) {
+            // open
+            menu_modal.classList.remove('pointer-events-none', 'opacity-0');
+            menu_modal.classList.add('pointer-events-auto', 'opacity-100');
+        } else {
+            // close
+            menu_modal.classList.add('opacity-0');
+            menu_modal.classList.remove('opacity-100', 'pointer-events-auto');
+            menu_modal.classList.add('pointer-events-none');
+            document.body.style.overflow = '';
+        }
     }
 
     if (hamburgerBtn) {
-        hamburgerBtn.addEventListener('click', openModal);
-    }
-
-    if (closeMainModalBtn) {
-        closeMainModalBtn.addEventListener('click', closeModal);
+        hamburgerBtn.addEventListener('click', toggleModal);
     }
 
     document.addEventListener('keydown', function (e) {
-        if ((e.key === 'Escape' || e.key === 'Esc') && !mainModal.classList.contains('opacity-0')) {
-            closeModal();
+        if ((e.key === 'Escape' || e.key === 'Esc') && !menu_modal.classList.contains('opacity-0')) {
+            toggleModal();
         }
     });
 
@@ -90,8 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var swiper = new Swiper(".exp_swiper", {
         slidesPerView: 3,
-        spaceBetween: 25,
         slidesPerGroup: 3,
+        spaceBetween: 25,
         loop: true,
         loopFillGroupWithBlank: true,
         autoplay: {

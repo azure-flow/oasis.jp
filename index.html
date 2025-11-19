@@ -29,7 +29,7 @@
 </style>
 
 <body>
-    <header class="fixed w-full top-0 z-20 bg-white flex flex-col justify-center items-center">
+    <header class="fixed w-full top-0 z-50 bg-white flex flex-col justify-center items-center">
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
             <div class="max-w-[1440px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
                 <div>
@@ -42,16 +42,20 @@
                 </div>
                 <div class="flex justify-between gap-3">
                     <div class="flex flex-col md:flex-row justify-center gap-2 md:gap-10 lg:gap-16">
-                        <div class="text-[13px] md:text-[13px] lg:text-[14px] font-medium">
-                            <i class="fa-solid fa-phone"></i>
+                        <div class="flex text-[13px] md:text-[13px] lg:text-[14px] font-medium gap-1">
+                            <svg class="w-[13px] md:w-[12px] lg:w-[16px] aspect-[1]" viewBox="0 0 24 24" fill="none"
+                                stroke="#88bec0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
                             <span>0279-25-8939</span>
                         </div>
-                        <div class="hidden md:block text-[12px] md:text-[13px] lg:text-[14px] font-medium">
-                            <i class="fa-regular fa-envelope"></i>
+                        <div class="hidden md:block md:text-[13px] lg:text-[14px] font-medium gap-1">
+                            <i class="fa-regular fa-envelope text-[#88bec0]"></i>&nbsp;
                             <span>info@aosis-welfare.co.jp</span>
                         </div>
                         <div class="text-[12px] md:text-[13px] lg:text-[14px] font-medium">
-                            <i class="fa-regular fa-clock"></i>
+                            <i class="fa-regular fa-clock text-[#88bec0]"></i>&nbsp;
                             <span>平日9:00-18:00</span>
                         </div>
                     </div>
@@ -113,19 +117,21 @@
         </div>
         <div class="w-full md:w-1/3 h-[290px] md:h-[400px] lg:h-full flex flex-row bg-[#89bec1]">
             <div class="w-full flex flex-col items-center justify-center">
-                <h1 class="text-white font-bold lg:text-[32px] xl:text-[43px] leading-[1.7]">
+                <h1 class="text-white font-bold text-[33px] lg:text-[32px] xl:text-[43px] leading-[1.7]">
                     福祉のこと、<br> ここで完結。
                 </h1>
-                <p class="text-white font-bold lg:text-[18px] xl:text-[21px] pt-2 leading-[1.7]">
+                <p class="text-white font-bold text-[16px] lg:text-[18px] xl:text-[21px] pt-2 leading-[1.7]">
                     介護用品からサービス、<br> 暮らしの環境まで<br> ワンストップ。
                 </p>
             </div>
-            <div class="md:w-[36px] lg:w-[80px] xl:w-[100px] bg-white flex justify-center items-end">
-                <div class="relative flex flex-col justify-center items-center cursor-pointer">
-                    <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-                    <span class="w-[2px] h-[40px] lg:h-[50px] bg-gray-300 mt-4"></span>
-                    <div
-                        class="w-[15px] lg:w-[25px] aspect-[1] rounded-full border-[5px] lg:border-[8px] border-[#89bec1] ">
+            <div
+                class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
+                <div class="absolute md:relative bottom-[-50px] md:bottom-0 right-[10px] md:right-0">
+                    <div class="relative flex flex-col justify-center items-center cursor-pointer">
+                        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+                        <span class="w-[2px] h-[60px] bg-gray-400 mt-4"></span>
+                        <div class="w-[24px] aspect-[1] rounded-full border-[8px] border-[#89bec1] ">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,20 +140,21 @@
     <section class="w-full flex justify-center py-10">
         <div class="w-full max-w-[1440px] flex flex-col items-center justify-center">
             <div class="w-full flex flex-col items-start justify-center px-8 xl:px-16 border-b-[1px] border-gray-200">
-                <h2 class="text-[#89bec1] font-bold text-[25px]">
+                <h2 class="text-[#89bec1] font-bold text-[22px] md:text-[20px] lg:text-[22px] xl:text-[25px]">
                     私たちについて
                 </h2>
-                <h2 class="text-black font-bold text-[43px] border-b-4 border-[#89bec1]">
+                <h2
+                    class="text-black font-bold text-[30px] md:text-[28px] lg:text-[32px] xl:text-[43px] border-b-4 border-[#89bec1]">
                     ABOUT US
                 </h2>
             </div>
             <div class="w-full flex flex-col md:flex-row">
                 <div
-                    class="flex flex-col items-start justify-center w-full md:w-1/2  px-8 xl:px-16 gap-10 border-b-[1px] border-gray-200 py-10">
-                    <h3 class="text-[25px] md:text-[30px] lg:text-[35px] font-bold text-[#89bec1]">
+                    class="flex flex-col items-start justify-center w-full md:w-1/2 px-8 md:px-12 lg:px-20 xl:px-24 gap-10 border-b-[1px] border-gray-200 py-10">
+                    <h3 class="text-[22px] md:text-[24px] lg:text-[28px] xl:text-[35px] font-bold text-[#89bec1]">
                         オアシスが届ける、<br> 福祉の安心と未来への希望
                     </h3>
-                    <p class="text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
+                    <p class="text-[14px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
                         オアシスは、高齢者やご家族、そして施設運営者にとって<br>
                         “心の拠り所”となる存在を目指しています。<br>
                         長年培った介護用品の仕入れ力と情報力を強みに、<br>
@@ -167,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative w-full md:w-1/2">
+                <div class="relative w-full md:w-1/2 h-[305px] md:h-full">
                     <img class="w-full h-full object-cover absolute inset-0" src="assets/images/about_top.webp">
                 </div>
             </div>
@@ -178,24 +185,25 @@
         <div class="w-full max-w-[1440px] flex flex-col items-center justify-center">
             <div class="w-full flex justify-end px-8 xl:px-16 border-b-[1px] border-gray-200">
                 <div class="w-1/2 flex flex-col items-start justify-center px-8 xl:px-16">
-                    <h2 class="text-[#89bec1] font-bold text-[25px]">
+                    <h2 class="text-[#89bec1] font-bold text-[22px] md:text-[20px] lg:text-[22px] xl:text-[25px]">
                         事業案内
                     </h2>
-                    <h2 class="text-black font-bold text-[43px] border-b-4 border-[#89bec1]">
+                    <h2
+                        class="text-black font-bold text-[30px] md:text-[28px] lg:text-[32px] xl:text-[43px] border-b-4 border-[#89bec1]">
                         SERVICE
                     </h2>
                 </div>
             </div>
             <div class="w-full flex flex-col md:flex-row">
-                <div class="relative w-full md:w-1/2">
+                <div class="relative w-full md:w-1/2 h-[305px] md:h-full">
                     <img class="w-full h-full object-cover absolute inset-0" src="assets/images/service_top.webp">
                 </div>
                 <div
-                    class="flex flex-col items-start justify-center w-full md:w-1/2  px-8 xl:px-16 gap-10 border-b-[1px] border-gray-200 py-10">
-                    <h2 class="text-[25px] md:text-[30px] lg:text-[35px] font-bold text-[#89bec1]">
+                    class="flex flex-col items-start justify-center w-full md:w-1/2 px-8 md:px-12 lg:px-20 xl:px-24 gap-10 border-b-[1px] border-gray-200 py-10">
+                    <h2 class="text-[22px] md:text-[24px] lg:text-[28px] xl:text-[35px] font-bold text-[#89bec1]">
                         オアシスの包括力<br> 福祉の総合サポートサービス
                     </h2>
-                    <p class="text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
+                    <p class="text-[14px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
                         現場を知るからこそ、本当に必要な支援を届けられる。<br>
                         オアシスは、福祉用具の販売・貸与だけでなく、訪問介護や訪問看護、<br>
                         住宅改修など多岐にわたるサービスを展開しています。ご利用者様<br>
@@ -219,98 +227,404 @@
     </section>
 
     <section class="w-full flex justify-center py-10">
-        <div class="w-full flex flex-col items-center justify-center bg-[#e1f4f5]">
-            <div class="w-full flex flex-col items-start justify-center">
-                <marquee>
-                    <h2 class="w-full text-white text-[137px] font-bold tracking-[5px]">
+        <div class="w-full flex flex-col items-center justify-center bg-[#e1f4f5] py-20 ">
+            <div class="relative w-full flex flex-col items-end justify-center pb-6 md:pb-0">
+                <marquee class="md:-mb-7 lg:-mb-9 xl:-mb-10">
+                    <h2
+                        class="w-full text-white text-[91px] md:text-[100px] lg:text-[120px] xl:text-[137px] font-bold tracking-[5px]">
                         All about welfare here
                     </h2>
                 </marquee>
-            </div>
-            <div class="">
+                <div
+                    class="md:absolute md:bottom-[-50px] lg:bottom-[-60px] xl:bottom-[-80px] 2xl:bottom-[-100px] md:right-[5px] lg:right-[20px] xl:right-[50px] 2xl:right-[100px] z-30 flex flex-row gap-12 md:gap-16 pr-4 md:pr-0">
+                    <div class="about-slider-prev flex items-center justify-center  cursor-pointer group duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            class="w-[30px] md:w-[35px] lg:w-[45px] xl:w-[55px] aspect-[1] text-[#88bec0] group-hover:text-white duration-200">
+                            <polyline points="95,5 60,50 95,95" fill="none" stroke="currentColor" stroke-width="10" />
+                        </svg>
+                        <span
+                            class="w-[30px] lg:w-[40px] xl:w-[55px] h-[3px] md:h-[4px] xl:h-[5px] bg-[#88bec0] group-hover:bg-white duration-200"></span>
+                    </div>
+                    <div class="about-slider-next flex items-center justify-center cursor-pointer group duration-300">
+                        <!-- <i class="fa-solid fa-arrow-right text-[48px] text-[#93c7cb]"></i> -->
+                        <span
+                            class="w-[30px] lg:w-[40px] xl:w-[55px] h-[3px] md:h-[4px] xl:h-[5px] bg-[#88bec0] group-hover:bg-white duration-200"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                            class="w-[30px] md:w-[35px] lg:w-[45px] xl:w-[55px] aspect-[1] text-[#88bec0] group-hover:text-white duration-200">
+                            <polyline points="5,5 40,50 5,95" fill="none" stroke="currentColor" stroke-width="10" />
+                        </svg>
 
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="relative swiper top-about-swiper h-full">
+                    <div class="swiper-wrapper flex">
+                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            訪問介護事業</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Visiting nursing care</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about01.webp " class="w-full h-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide md:w-[40%]">
+                            <div class="relative w-full h-full flex items-end">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[14px] md:text-[14px] lg:text-[18px] xl:text-[20px]">
+                                            訪問介護事業</h3>
+                                        <p class="font-bold text-[10px] md:text-[9px] lg:text-[11px] xl:text-[12px]">
+                                            Visiting nursing care</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about02.webp " class="w-full h-auto">
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            訪問看護事業</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Visiting nursing</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <img src="assets/images/about03.webp " class="w-full h-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            福祉用具・消耗品・<br>住宅リフォーム</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Welfare equipment</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about04.webp " class="w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".top-about-swiper", {
+                    slidesPerView: "auto",
+                    // slidesPerGroup: 3,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    navigation: {
+                        nextEl: ".about-slider-next",
+                        prevEl: ".about-slider-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center py-10">
+        <div class="w-full max-w-[1440px] flex flex-col items-center justify-center">
+            <div class="w-full flex flex-col items-start justify-center px-8 xl:px-16 border-b-[1px] border-gray-200">
+                <h2 class="text-[#89bec1] font-bold text-[22px] md:text-[20px] lg:text-[22px] xl:text-[25px]">
+                    代表メッセージ
+                </h2>
+                <h2
+                    class="text-black font-bold text-[30px] md:text-[28px] lg:text-[32px] xl:text-[43px] border-b-4 border-[#89bec1]">
+                    MESSAGE
+                </h2>
+            </div>
+            <div class="w-full flex flex-col md:flex-row">
+                <div
+                    class="flex flex-col items-start justify-center w-full md:w-1/2 px-8 md:px-12 lg:px-20 xl:px-24 gap-10 border-b-[1px] border-gray-200 py-10">
+                    <h3 class="text-[22px] md:text-[24px] lg:text-[28px] xl:text-[35px] font-bold text-[#89bec1]">
+                        オアシスの包括力ー介護の<br> ワンストップサービス
+                    </h3>
+                    <p class="text-[14px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
+                        この度は弊社ホームページをご覧いただき、誠にありがとうございます。私は介護福祉士として12年間、現場で勤務してまいりました。<br>
+                        起業後も現場に立ちながら働いておりましたが、その折に右足を怪我し、走ることができない時期がありました。ある夜勤のナースコール対応で、走れないことが原因となり利用者様に怪我をさせてしまった経験があります。命をお預かりする仕事の重大さを改めて痛感した瞬間でした。その出来事をきっかけに、「現場の内側からだけでなく、外側からも利用者様の生活を支えていきたい」と考えるようになり、現在に至っております。弊社の強みは、現場で培った実体験とノウハウをもとに、必要な商品を的確にご提案できることです。ときには「それは買わなくても大丈夫ですよ。現場ではあまり使わないので…」と業者らしからぬ一言を添えることもございます。
+                        <br><br>
+                        良いものを、無駄なく、できる限り安くご提供することが弊社の考えです。今お使いの商品でご不安や疑問がございましたら、どうぞお気軽にご相談ください。
+                    </p>
+                    <div class="w-full flex justify-end md:justify-start">
+                        <div
+                            class="relative flex justify-center items-center w-[100px] aspect-[1] rounded-full bg-white border-[2px] border-[#89bec1] mr-[10%] group cursor-pointer">
+                            <span
+                                class="group-hover:w-[15px] w-[10px] aspect-[1] rounded-full bg-[#89bec1] duration-300"></span>
+                            <p class="absolute right-[-50%] bg-white text-[15px] text-[#89bec1] font-bold">
+                                View More
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/2 h-[520px] md:h-full">
+                    <img class="w-full h-full object-cover absolute inset-0" src="assets/images/message_top.webp">
+                </div>
             </div>
         </div>
     </section>
-    <div id="mainModal"
-        class="w-full fixed inset-0 z-50 flex bg-[#033939cc] transition-all duration-700 ease-in-out pointer-events-none opacity-0">
-        <div class="relative w-full h-full flex flex-col px-8 py-10 bg-[#81BCBE]">
-
-            <!-- close button -->
-            <button id="closeMainModalBtn" class="absolute top-8 left-8 z-20 bg-transparent border-none">
-                <svg width="30" height="20" viewBox="0 0 155 115" fill="none">
-                    <line x1="3" y1="3" x2="152" y2="112" stroke="white" stroke-width="6" />
-                    <line x1="152" y1="3" x2="3" y2="112" stroke="white" stroke-width="6" />
-                </svg>
-            </button>
-
-            <!-- content container -->
-            <div class="flex flex-col h-full mt-24">
-                <!-- main nav -->
-                <nav class="flex flex-col gap-6 pl-4 text-white font-bold text-[16px] leading-[1.8]">
-                    <a href="#" class="hover:opacity-70">TOP</a>
-
-                    <a href="#" class="hover:opacity-70">オアシスとは</a>
-                    <a href="#" class="hover:opacity-70">会社情報</a>
-
-                    <div id="tab1" class="pt-2 font-semibold cursor-pointer">事業内容</div>
-
-                    <div id="tab2" class="flex flex-col gap-2 pl-3 text-[14px] hidden">
-                        <a href="#" class="flex items-center gap-2">
-                            <span class="text-white/80">›</span> 有料老人ホーム
+    <section class="w-full">
+        <div
+            class="flex justify-center items-center gap-20 max-h-[600px] h-[480px] md:h-full xl:h-[600px] md:py-28 lg:py-32 xl:py-40 bg-[url('assets/images/bg_contact.webp')] bg-center">
+            <div class="flex flex-col w-full md:w-[720px] lg:w-[800px] xl:w-full max-w-[1000px] gap-4 px-8 pb-12">
+                <div class="flex flex-col">
+                    <p class="font-bold text-center text-[16px] md:text-[15px]">CONTACT</p>
+                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">お問い合わせ
+                    </h2>
+                </div>
+                <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+                    <div
+                        class="w-full h-[109px] md:h-auto md:w-1/2 flex justify-center items-center text-[17px] md:text-[20px] lg:text-[24px] xl:text-[27px] font-bold bg-white text-[#88bec0] cursor-pointer gap-2 hover:text-white hover:bg-[#88bec0] duration-300 select-none">
+                        <i class="fa-regular fa-clock"></i>
+                        お問い合わせフォーム
+                    </div>
+                    <div
+                        class="w-full h-[109px] md:h-full md:w-1/2 flex flex-col justify-center items-center bg-white p-2 xl:p-8 hover:bg-[#88bec0] duration-300 group select-none">
+                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談 </h2>
+                        <div
+                            class="text-[#88bec0] text-[28px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-bold gap-2 -my-2 group-hover:text-white cursor-pointer duration-300">
+                            <i class="fa-regular fa-clock"></i>
+                            0279-25-8939
+                        </div>
+                        <p
+                            class="hidden md:block text-[10px] md:text-[10px] lg:text-[14px] xl:text-[16px] font-bold pt-[3px]">
+                            営業時間：平日9:00〜18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full bg-[#88bec0] py-16 md:max-h-[415px]">
+        <div
+            class="max-w-[1440px] w-full md:w-[700px] lg:w-full mx-auto px-12 md:px-4 lg:px-12 flex flex-col md:flex-row items-start gap-8">
+            <div class="w-full flex flex-col-reverse md:flex-row">
+                <div class="w-full md:w-[35%] flex">
+                    <div class="w-full flex flex-col-reverse md:flex-col gap-4 min-w-[220px]">
+                        <div
+                            class="md:hidden block lg text-[14px] md:text-[10px] xl:text-[14px] text-center text-white font-bold">
+                            ©株式会社オアシス. All rights reserved.</div>
+                        <div class="w-full flex flex-col md:flex-row items-center md:items-end gap-1">
+                            <span
+                                class="text-white font-bold text-[57px] md:text-[40px] lg:text-[57px] leading-tight tracking-wide">oasis</span>
+                            <span
+                                class="text-white text-[19px] md:text-[14px] lg:text-[19px] font-bold pb-3">株式会社オアシス</span>
+                        </div>
+                        <div class="flex flex-col gap-2 text-white text-[13px] mt-2">
+                            <div class="flex items-center font-bold gap-2">
+                                <svg class="w-[16px] md:w-[12px] lg:w-[16px] aspect-[1]" viewBox="0 0 24 24" fill="none"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                <span>0279-25-8939</span>
+                            </div>
+                            <div class="flex items-center font-bold gap-2">
+                                <i
+                                    class="fa-regular fa-envelope text-white text-[14px] md:text-[10px] lg:text-[14px]"></i>
+                                <span>info@aosis-welfare.co.jp</span>
+                            </div>
+                            <div class="flex items-center font-bold gap-2">
+                                <i class="fa-regular fa-clock text-white text-[14px] md:text-[10px] lg:text-[14px]"></i>
+                                <span>平日9:00-18:00</span>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center md:justify-start">
+                            <a href="#"
+                                class="mt-4 w-fit px-4 py-2 border border-white rounded text-white text-[18px] md:text-[13px] lg:text-[18px] font-bold hover:bg-white hover:text-[#85babc] duration-200 transition-all">
+                                無料相談申し込み
+                            </a>
+                        </div>
+                        <span
+                            class="hidden md:block mt-4 lg text-[14px] md:text-[10px] xl:text-[14px] text-white font-bold">©株式会社オアシス.
+                            All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-[65%] flex flex-col md:flex-row gap-8 md:gap-0">
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[140px]">
+                        <a href="#"
+                            class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">オアシスとは</a>
+                        <a href="#"
+                            class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">会社情報</a>
+                    </div>
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[180px]">
+                        <span
+                            class="text-white font-semibold text-[21px] md:text-[12px] lg:text-[17px] mb-2">事業内容</span>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            有料老人ホーム
                         </a>
-                        <a href="#" class="flex items-center gap-2">
-                            <span class="text-white/80">›</span> 訪問介護
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            訪問介護
                         </a>
-                        <a href="#" class="flex items-center gap-2">
-                            <span class="text-white/80">›</span> 訪問看護
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            訪問看護
                         </a>
-                        <a href="#" class="flex items-center gap-2">
-                            <span class="text-white/80">›</span> 福祉用具・消耗品
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            福祉用具・消耗品
                         </a>
-                        <a href="#" class="flex items-center gap-2">
-                            <span class="text-white/80">›</span> 住宅リフォーム
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            住宅リフォーム
                         </a>
                     </div>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const tab1 = document.getElementById('tab1');
-                            const tab2 = document.getElementById('tab2');
-                            if (tab1 && tab2) {
-                                tab1.addEventListener('click', function () {
-                                    tab2.classList.remove('hidden');
-                                });
-                            }
-                        });
-                    </script>
-
-                    <a href="#" class="hover:opacity-70 pt-4">プライバシーポリシー</a>
-                    <a href="#" class="hover:opacity-70">お問い合わせ</a>
-                </nav>
-
-                <!-- CTA BUTTON -->
-                <div class="mt-8 mb-10">
-                    <button
-                        class="w-full border border-white text-white py-3 text-[15px] tracking-wide rounded-md text-center hover:bg-white hover:text-[#81BCBE] transition">
-                        無料相談申し込み
-                    </button>
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[150px]">
+                        <a href="#"
+                            class="text-white text-[21px] md:text-[12px] lg:text-[17px] font-bold mb-2 hover:underline">プライバシーポリシー</a>
+                        <a href="#"
+                            class="text-white text-[21px] md:text-[12px] lg:text-[17px] font-bold hover:underline">お問い合わせ</a>
+                    </div>
                 </div>
-
-                <!-- contact info -->
-                <div class="text-white text-[13px] leading-6">
-                    <p>0279-25-8939</p>
-                    <p>info@oasis-welfare.co.jp</p>
-                    <p>平日 9:00–18:00</p>
+            </div>
+        </div>
+    </footer>
+    <div id="menu_modal"
+        class="w-full fixed inset-0 z-40 flex bg-[#033939cc] transition-all duration-700 ease-in-out pointer-events-none opacity-0 pt-[77px]">
+        <div class="relative w-full h-full flex flex-col px-8 py-10 bg-[#81BCBE] overflow-auto">
+            <div class="w-full flex flex-col-reverse md:flex-row">
+                <div class="w-full md:w-[35%] flex">
+                    <div class="w-full flex flex-col-reverse md:flex-col gap-4 min-w-[220px]">
+                        <div
+                            class="md:hidden block lg text-[14px] md:text-[10px] xl:text-[14px] text-center text-white font-bold">
+                            ©株式会社オアシス. All rights reserved.</div>
+                        <div class="w-full flex flex-col md:flex-row items-center md:items-end gap-1">
+                            <span
+                                class="text-white font-bold text-[57px] md:text-[40px] lg:text-[57px] leading-tight tracking-wide">oasis</span>
+                            <span
+                                class="text-white text-[19px] md:text-[14px] lg:text-[19px] font-bold pb-3">株式会社オアシス</span>
+                        </div>
+                        <div class="flex flex-col gap-2 text-white text-[13px] mt-2">
+                            <div class="flex items-center font-bold gap-2">
+                                <svg class="w-[16px] md:w-[12px] lg:w-[16px] aspect-[1]" viewBox="0 0 24 24" fill="none"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                <span>0279-25-8939</span>
+                            </div>
+                            <div class="flex items-center font-bold gap-2">
+                                <i
+                                    class="fa-regular fa-envelope text-white text-[14px] md:text-[10px] lg:text-[14px]"></i>
+                                <span>info@aosis-welfare.co.jp</span>
+                            </div>
+                            <div class="flex items-center font-bold gap-2">
+                                <i class="fa-regular fa-clock text-white text-[14px] md:text-[10px] lg:text-[14px]"></i>
+                                <span>平日9:00-18:00</span>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center md:justify-start">
+                            <a href="#"
+                                class="mt-4 w-fit px-4 py-2 border border-white rounded text-white text-[18px] md:text-[13px] lg:text-[18px] font-bold hover:bg-white hover:text-[#85babc] duration-200 transition-all">
+                                無料相談申し込み
+                            </a>
+                        </div>
+                        <span
+                            class="hidden md:block mt-4 lg text-[14px] md:text-[10px] xl:text-[14px] text-white font-bold">©株式会社オアシス.
+                            All rights reserved.</span>
+                    </div>
                 </div>
-
-                <!-- spacer pushes logo to bottom -->
-                <div class="flex-grow"></div>
-
-                <!-- footer logo -->
-                <div class="text-center mt-8 mb-4">
-                    <p class="text-white text-[32px] font-bold tracking-wide">oasis</p>
-                    <p class="text-white text-[13px] mt-1">株式会社オアシス</p>
-                    <p class="text-white/70 text-[10px] mt-2">© 株式会社オアシス. All rights reserved.</p>
+                <div class="w-full md:w-[65%] flex flex-col md:flex-row gap-8 ">
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[140px]">
+                        <a href="#"
+                            class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">オアシスとは</a>
+                        <a href="#"
+                            class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">会社情報</a>
+                    </div>
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[180px]">
+                        <span
+                            class="text-white font-semibold text-[21px] md:text-[12px] lg:text-[17px] mb-2">事業内容</span>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            有料老人ホーム
+                        </a>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            訪問介護
+                        </a>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            訪問看護
+                        </a>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            福祉用具・消耗品
+                        </a>
+                        <a href="#"
+                            class="text-white text-[18px] md:text-[11px] lg:text-[15px] pl-2 font-bold hover:underline">
+                            <i class="fa-solid fa-angle-right"></i>
+                            住宅リフォーム
+                        </a>
+                    </div>
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[150px]">
+                        <a href="#"
+                            class="text-white text-[21px] md:text-[12px] lg:text-[17px] font-bold mb-2 hover:underline">プライバシーポリシー</a>
+                        <a href="#"
+                            class="text-white text-[21px] md:text-[12px] lg:text-[17px] font-bold hover:underline">お問い合わせ</a>
+                    </div>
                 </div>
             </div>
         </div>
