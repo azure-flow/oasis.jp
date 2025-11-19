@@ -12,10 +12,10 @@
 *::after {
     box-sizing: border-box;
 }
-
+/* 
 * {
-    font-family: 'EB Garamond', serif;
-}
+    font-family: "Zen Old Mincho", serif;
+} */
 
 .simpleParallax {
     height: 100%;
@@ -25,8 +25,8 @@
     font-family: "Zen Old Mincho", serif;
 }
 
-.font-garamond {
-    font-family: Garamond Premier Pro !important;
+.font-gothic {
+    font-family: 'Zen Kaku Gothic New', sans-serif !important;
 }
 
 .featured-swiper .swiper-pagination-bullet {
