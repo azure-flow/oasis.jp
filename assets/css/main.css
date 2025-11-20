@@ -49,6 +49,16 @@
     }
 }
 
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-33.33%);
+    }
+}
+
 /* Parallax Fixed Background Optimization */
 .parallax-bg-fixed {
     will-change: transform;
