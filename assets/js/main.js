@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         loop: true,
-        speed: 1600,  // <-- now works for next + prev
+        speed: 750,  // <-- now works for next + prev
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
