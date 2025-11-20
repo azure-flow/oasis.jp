@@ -283,10 +283,10 @@
             <div class="w-full">
                 <div class="relative swiper top-about-swiper h-full">
                     <div class="swiper-wrapper flex">
-                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
-                            <div class="relative w-full h-full flex items-end">
+                        <div class="swiper-slide h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
-                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
                                     <div class="flex flex-col h-full justify-center">
                                         <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
                                             訪問介護事業</h3>
@@ -300,13 +300,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about01.webp " class="w-full h-auto">
+                                <img src="assets/images/about01.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
-                            <div class="relative w-full h-full flex items-end">
+                        <div class="swiper-slide h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
-                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
                                     <div class="flex flex-col h-full justify-center">
                                         <h3 class="font-bold text-[14px] md:text-[14px] lg:text-[18px] xl:text-[20px]">
                                             訪問介護事業</h3>
@@ -320,13 +320,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about02.webp " class="w-full h-auto">
+                                <img src="assets/images/about02.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
-                            <div class="relative w-full h-full flex items-end">
+                        <div class="swiper-slide h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
-                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
                                     <div class="flex flex-col h-full justify-center">
                                         <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
                                             訪問看護事業</h3>
@@ -340,13 +340,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about03.webp " class="w-full h-auto">
+                                <img src="assets/images/about03.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide w-[80%] md:w-[30%] h-full flex items-end">
-                            <div class="relative w-full h-full flex items-end">
+                        <div class="swiper-slide h-full flex items-end">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
-                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10">
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
                                     <div class="flex flex-col h-full justify-center">
                                         <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
                                             福祉用具・消耗品・<br>住宅リフォーム</h3>
@@ -360,121 +360,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about04.webp " class="w-full h-auto">
+                                <img src="assets/images/about04.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <script>
-                            // Make swiper slide width animate DURING the slide transition (not after)
-                            document.addEventListener('DOMContentLoaded', function () {
-                                const SLIDE_ACTIVE_WIDTH = '40%';
-                                const SLIDE_WIDTH = '30%';
 
-                                function setSlideWidths(swiper) {
-                                    // Only apply on desktop
-                                    if (window.innerWidth < 768) return;
-
-                                    swiper.slides.forEach(slide => {
-                                        slide.style.width = SLIDE_WIDTH;
-                                        slide.classList.remove('about-active');
-                                    });
-                                    let activeIndex = swiper.activeIndex;
-                                    if (swiper.params.loop && swiper.loopedSlides) {
-                                        // Correction to get correct active slide if loop enabled
-                                        activeIndex = swiper.realIndex;
-                                    }
-
-                                    if (swiper.slides[activeIndex]) {
-                                        swiper.slides[activeIndex].style.width = SLIDE_ACTIVE_WIDTH;
-                                        swiper.slides[activeIndex].classList.add('about-active');
-                                    }
-                                }
-
-                                const swiper = new Swiper(".top-about-swiper", {
-                                    slidesPerView: "auto",
-                                    spaceBetween: 30,
-                                    loop: true,
-                                    centeredSlides: true,
-                                    speed: 2000, // Increased transition duration in ms (was default 300ms)
-                                    navigation: {
-                                        nextEl: ".about-slider-next",
-                                        prevEl: ".about-slider-prev",
-                                    },
-                                    pagination: {
-                                        el: ".swiper-pagination",
-                                        clickable: true,
-                                    },
-                                    on: {
-                                        beforeTransitionStart: function () {
-                                            setSlideWidths(this);
-                                        },
-                                        setTransition: function (transition) {
-                                            // The class will control transition, but force style as fallback
-                                            this.slides.forEach(slide => {
-                                                // Use the Swiper transition speed as fallback if not provided
-                                                slide.style.transition = `width ${transition || swiper.params.speed}ms`;
-                                            });
-                                        },
-                                        transitionStart: function () {
-                                            setSlideWidths(this);
-                                        },
-                                        transitionEnd: function () {
-                                            setSlideWidths(this);
-                                        },
-                                        afterInit: function () {
-                                            setSlideWidths(this);
-                                        }
-                                    }
-                                });
-
-                                // Also call on resize!
-                                window.addEventListener('resize', function () {
-                                    setTimeout(function () {
-                                        setSlideWidths(swiper);
-                                    }, 100);
-                                });
-
-                                // Initial application
-                                setTimeout(() => setSlideWidths(swiper), 100);
-                            });
-                        </script>
-                        <style>
-                            @media (min-width: 768px) {
-                                .top-about-swiper .swiper-slide {
-                                    width: 30% !important;
-                                    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                                }
-
-                                .top-about-swiper .swiper-slide.about-active {
-                                    width: 40% !important;
-                                }
-                            }
-                        </style>
                     </div>
                 </div>
             </div>
-            <!-- <script>
-                var swiper = new Swiper(".top-about-swiper", {
-                    slidesPerView: "auto",
-                    // slidesPerGroup: 3,
-                    spaceBetween: 30,
-                    loop: true,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false
-                    },
-                    // centeredSlides: true,
-                    // centerInsufficientSlides: true,
-                    enteredSlidesBounds: true,
-                    navigation: {
-                        nextEl: ".about-slider-next",
-                        prevEl: ".about-slider-prev",
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                });
-            </script> -->
         </div>
     </section>
 

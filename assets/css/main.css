@@ -65,3 +65,25 @@
     backface-visibility: hidden;
     transition: transform 0.1s ease-out;
 }
+
+@media (min-width: 768px) {
+    .top-about-swiper .swiper-slide {
+        width: 30% !important;
+        transition: width .5s;
+    }
+
+    .top-about-swiper .swiper-slide.swiper-slide-next {
+        width: 37% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-about-swiper .swiper-slide {
+        width: 90% !important;
+        transition: width .5s;
+    }
+
+    .top-about-swiper .swiper-slide.swiper-slide-next {
+        width: 80% !important;
+    }
+}
