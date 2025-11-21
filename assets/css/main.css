@@ -39,6 +39,20 @@
     background: #C4B28C !important;
 }
 
+@keyframes flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-flow {
+    animation: flow 18s linear infinite;
+}
+
 
 @keyframes bounce {
     25% {
@@ -60,38 +74,6 @@
     }
 }
 
-/* Parallax Fixed Background Optimization */
-.parallax-bg-fixed {
-    will-change: transform;
-    backface-visibility: hidden;
-    transition: transform 0.1s ease-out;
-}
-
-
-/* @media (min-width: 768px) {
-    .top-about-swiper .swiper-slide {
-        width: 30% !important;
-        transition: width .5s;
-    }
-
-    .top-about-swiper .swiper-slide.swiper-slide-active {
-        width: 37% !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .top-about-swiper .swiper-slide {
-        width: 90% !important;
-        transition: width .5s;
-    }
-
-    .top-about-swiper .swiper-slide.swiper-slide-active {
-        width: 80% !important;
-    }
-} */
-
-
-
 @media (min-width: 767px) {
 
     .top-about-swiper .swiper-slide.swiper-slide-next {
@@ -102,19 +84,19 @@
         width: 30%;
         transition: width .5s;
     }
-    
+
     .top-about-swiper .swiper-slide.swiper-slide-next {
         width: 38%;
         transition: width .5s;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .top-about-swiper .swiper-slide {
         width: 80%;
         transition: width .5s;
     }
-    
+
     .top-about-swiper .swiper-slide.swiper-slide-next {
         width: 90%;
     }

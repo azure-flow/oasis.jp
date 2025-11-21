@@ -58,30 +58,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Debounce to ensure function runs AFTER window resizing is completed
-    window.addEventListener('resize', updateAboutSwiperHeight);
+    window.addEventListener('resize', () => {
+        setTimeout(() => {
+            updateAboutSwiperHeight();
+        }, 500);
+    });
 
     // Optionally: Also update on DOMContentLoaded for correct initial state
     setTimeout(() => {
         updateAboutSwiperHeight();
-    }, 1000)
+    }, 500)
 
     const about_swiper = new Swiper(".top-about-swiper", {
         slidesPerView: "auto",
         spaceBetween: 24,
-        breakpoints: {
-            768: {
-                spaceBetween: 16
-            },
-            1024: {
-                spaceBetween: 32
-            }
-        },
         loop: true,
         speed: 750,
-        preloadImages: true,             // Always preload images
-        lazy: false,                     // Don't use lazy loading (ensure images load up front)
-        watchSlidesProgress: true,       // Helps render partially visible slides, i.e. in offset area
-        watchSlidesVisibility: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -90,29 +82,12 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: ".about-slider-next",
             prevEl: ".about-slider-prev",
         },
-        // Ensure enough slides are rendered to fill out visible space (right 200px area)
+        loopedSlides: document.querySelectorAll('.top-about-swiper .swiper-slide').length,
         on: {
             beforeInit: function (swiper) {
-                // If you added a right offset to .swiper-wrapper,
-                // ensure there are enough slides to cover the empty area.
-                // Optionally, you can adjust loopedSlides (uncomment below).
-                // This makes Swiper render enough slides for looping and offsets.
                 swiper.params.loopAdditionalSlides = 2;
             },
-            // Optionally preload extra slides images before transition
-            slideNextTransitionStart: function (swiper) {
-                const nextIndex = (swiper.activeIndex + 1) % swiper.slides.length;
-                const nextSlide = swiper.slides[nextIndex];
-                if (nextSlide) {
-                    // If image is not yet loaded, trigger load
-                    const img = nextSlide.querySelector('img');
-                    if (img && img.dataset && img.dataset.src) {
-                        img.src = img.dataset.src;
-                    }
-                }
-            },
             click: function (swiper, event) {
-                // You can keep or adjust custom click logic if needed
                 const clickedSlide = swiper.clickedSlide;
                 const activeIndex = swiper.activeIndex;
                 const clickedIndex = swiper.slides.indexOf(clickedSlide);
@@ -120,14 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (clickedIndex === activeIndex) {
                     swiper.slidePrev()
-                } else if (clickedIndex - activeIndex === 2) {
+                } else if (clickedIndex - activeIndex === 2 || clickedIndex - activeIndex === 3) {
                     swiper.slideNext();
-                } else if (clickedIndex - activeIndex === 3) {
-                    swiper.slideTo(swiper.activeIndex + 2);
-                    swiper.params.loopAdditionalSlides = 2;
-
                 }
             }
         }
     });
+
+    about_swiper.slidePrev();
 });
