@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // for scroll motion
+    const circle = document.getElementById('scroll-circle');
+    const line = document.getElementById('scroll-line');
+
+    window.addEventListener('scroll', () => {
+        const maxScroll = document.documentElement.scrollHeight - innerHeight;
+        const scrollPercent = scrollY / maxScroll;
+
+        const lineHeight = line.offsetHeight;
+        const circleHeight = circle.offsetHeight;
+
+        const move = scrollPercent * (lineHeight - circleHeight);
+
+        circle.style.top = `${move}px`;
+    });
+
     // Haumburger Button to open menu on smartphone
 
     const hamburgerBtn = document.getElementById('hamburgerBtn');
@@ -29,16 +45,43 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+    //
+
+    function updateAboutSwiperHeight() {
+        const nextSlide = document.querySelector('.top-about-swiper .swiper-slide-next img');
+        const container = document.querySelector('.top-about-swiper .swiper-wrapper');
+        if (nextSlide && container) {
+            const h = nextSlide.offsetHeight;
+            container.style.height = h + 'px';
+        }
+    }
+
+    // Debounce to ensure function runs AFTER window resizing is completed
+    window.addEventListener('resize', updateAboutSwiperHeight);
+
+    // Optionally: Also update on DOMContentLoaded for correct initial state
+    setTimeout(() => {
+        updateAboutSwiperHeight();
+    }, 1000)
+
     const about_swiper = new Swiper(".top-about-swiper", {
         slidesPerView: "auto",
         spaceBetween: 24,
         breakpoints: {
             768: {
+                spaceBetween: 16
+            },
+            1024: {
                 spaceBetween: 32
             }
         },
         loop: true,
-        speed: 750,  // <-- now works for next + prev
+        speed: 750,
+        preloadImages: true,             // Always preload images
+        lazy: false,                     // Don't use lazy loading (ensure images load up front)
+        watchSlidesProgress: true,       // Helps render partially visible slides, i.e. in offset area
+        watchSlidesVisibility: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -47,22 +90,42 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: ".about-slider-next",
             prevEl: ".about-slider-prev",
         },
-
+        // Ensure enough slides are rendered to fill out visible space (right 200px area)
         on: {
+            beforeInit: function (swiper) {
+                // If you added a right offset to .swiper-wrapper,
+                // ensure there are enough slides to cover the empty area.
+                // Optionally, you can adjust loopedSlides (uncomment below).
+                // This makes Swiper render enough slides for looping and offsets.
+                swiper.params.loopAdditionalSlides = 2;
+            },
+            // Optionally preload extra slides images before transition
+            slideNextTransitionStart: function (swiper) {
+                const nextIndex = (swiper.activeIndex + 1) % swiper.slides.length;
+                const nextSlide = swiper.slides[nextIndex];
+                if (nextSlide) {
+                    // If image is not yet loaded, trigger load
+                    const img = nextSlide.querySelector('img');
+                    if (img && img.dataset && img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
+                }
+            },
             click: function (swiper, event) {
+                // You can keep or adjust custom click logic if needed
                 const clickedSlide = swiper.clickedSlide;
                 const activeIndex = swiper.activeIndex;
+                const clickedIndex = swiper.slides.indexOf(clickedSlide);
                 if (!clickedSlide) return;
 
-                const clickedIndex = swiper.slides.indexOf(clickedSlide);
+                if (clickedIndex === activeIndex) {
+                    swiper.slidePrev()
+                } else if (clickedIndex - activeIndex === 2) {
+                    swiper.slideNext();
+                } else if (clickedIndex - activeIndex === 3) {
+                    swiper.slideTo(swiper.activeIndex + 2);
+                    swiper.params.loopAdditionalSlides = 2;
 
-                if (activeIndex === clickedIndex && (clickedIndex === 0 || clickedIndex === 1)) {
-                    swiper.navigation.prevEl.click();
-                } else if (
-                    (activeIndex === 0 && clickedIndex == 2) ||
-                    (activeIndex === 1 && clickedIndex == 3)
-                ) {
-                    swiper.navigation.nextEl.click();
                 }
             }
         }

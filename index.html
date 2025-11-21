@@ -127,11 +127,12 @@
             </div>
             <div
                 class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
-                <div class="absolute md:relative bottom-[-50px] md:bottom-0 right-[10px] md:right-0">
-                    <div class="relative flex flex-col justify-center items-center cursor-pointer">
-                        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-                        <span class="w-[2px] h-[60px] bg-gray-400 mt-4"></span>
-                        <div class="w-[24px] aspect-[1] rounded-full border-[8px] border-[#89bec1] ">
+                <div
+                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-4 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
+                    <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+                    <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
+                        <div id="scroll-circle"
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
                         </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
                         コストの最適化と安心を両立する 福祉サービス をお届けします。<br>
                     </p>
                     <div class="w-full flex justify-end">
-                        <div class="flex w-[105px] h-[105px] justify-center items-center">
+                        <div class="flex w-[105px] h-[105px] justify-center items-center pr-4 md:pr-0">
                             <div
                                 class="relative flex justify-center items-center w-[100px] hover:w-[104px] aspect-[1] rounded-full bg-white border-[2px] hover:border-[3px] border-[#89bec1] group duration-200 cursor-pointer">
                                 <span
@@ -222,7 +223,7 @@
                         にすることを使命としています。<br>
                     </p>
                     <div class="w-full flex justify-end">
-                        <div class="flex w-[105px] h-[105px] justify-center items-center">
+                        <div class="flex w-[105px] h-[105px] justify-center items-center pr-4 md:pr-0">
                             <div
                                 class="relative flex justify-center items-center w-[100px] hover:w-[104px] aspect-[1] rounded-full bg-white border-[2px] hover:border-[3px] border-[#89bec1] group duration-200 cursor-pointer">
                                 <span
@@ -243,7 +244,7 @@
         <div class="w-full flex flex-col items-center justify-center bg-[#e1f4f5] py-20 ">
             <div class="relative w-full flex flex-col items-end justify-center pb-6 md:pb-0">
                 <div class="w-full overflow-hidden md:-mb-7 lg:-mb-9 xl:-mb-10 whitespace-nowrap">
-                    <div class="animate-marquee flex gap-60" style="animation: marquee 15s linear infinite;">
+                    <div class="animate-marquee flex" style="animation: marquee 15s linear infinite;">
                         <h2
                             class="w-full text-white text-[91px] md:text-[100px] lg:text-[120px] xl:text-[137px] font-bold tracking-[5px] mr-16">
                             All about welfare here&nbsp;
@@ -281,9 +282,9 @@
                 </div>
             </div>
             <div class="w-full">
-                <div class="relative swiper top-about-swiper h-full">
-                    <div class="swiper-wrapper flex">
-                        <div class="swiper-slide h-full flex items-end">
+                <div class="relative swiper top-about-swiper h-full max-w-[1920px]">
+                    <div class="swiper-wrapper flex -left-[100%] md:-left-[15%]">
+                        <div class="swiper-slide h-full flex items-end ">
                             <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
                                     class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
@@ -300,10 +301,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about01.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                                <img src="assets/images/about01.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide h-full flex items-end">
+
+                        <div class="swiper-slide h-full flex items-end ">
                             <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
                                     class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
@@ -320,10 +323,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about02.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                                <img src="assets/images/about02.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide h-full flex items-end">
+
+                        <div class="swiper-slide h-full flex items-end ">
                             <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
                                     class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
@@ -340,10 +345,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about03.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                                <img src="assets/images/about03.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
-                        <div class="swiper-slide h-full flex items-end">
+
+                        <div class="swiper-slide h-full flex items-end ">
                             <div class="relative w-full h-full flex items-end overflow-hidden">
                                 <div
                                     class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
@@ -360,10 +367,98 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/about04.webp " class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                                <img src="assets/images/about04.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
                             </div>
                         </div>
 
+                        <div class="swiper-slide h-full flex items-end ">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            訪問介護事業</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Visiting nursing care</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about01.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-full flex items-end ">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[14px] md:text-[14px] lg:text-[18px] xl:text-[20px]">
+                                            訪問介護事業</h3>
+                                        <p class="font-bold text-[10px] md:text-[9px] lg:text-[11px] xl:text-[12px]">
+                                            Visiting nursing care</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about02.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-full flex items-end ">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            訪問看護事業</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Visiting nursing</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about03.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-full flex items-end ">
+                            <div class="relative w-full h-full flex items-end overflow-hidden">
+                                <div
+                                    class="absolute flex justify-between left-0 bottom-0 w-[60%] h-[20%] bg-[#e1f4f5] py-2 px-4 md:p-4 lg:p-6 xl:py-6 xl:px-10 z-20">
+                                    <div class="flex flex-col h-full justify-center">
+                                        <h3 class="font-bold text-[13px] md:text-[12px] lg:text-[14px] xl:text-[16px]">
+                                            福祉用具・消耗品・<br>住宅リフォーム</h3>
+                                        <p class="font-bold text-[8px] md:text-[8px] lg:text-[9px] xl:text-[10px]">
+                                            Welfare equipment</p>
+                                    </div>
+                                    <div class="flex items-end">
+                                        <div
+                                            class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-[#89bec1] flex items-center justify-center text-white cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="assets/images/about04.webp "
+                                    class="w-full h-auto hover:scale-[1.05] z-10 duration-200 cursor-pointer">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,7 +492,7 @@
                         良いものを、無駄なく、できる限り安くご提供することが弊社の考えです。今お使いの商品でご不安や疑問がございましたら、どうぞお気軽にご相談ください。
                     </p>
                     <div class="w-full flex justify-end md:justify-start">
-                        <div class="flex w-[105px] h-[105px] justify-center items-center">
+                        <div class="flex w-[105px] h-[105px] justify-center items-center pr-4 md:pr-0">
                             <div
                                 class="relative flex justify-center items-center w-[100px] hover:w-[104px] aspect-[1] rounded-full bg-white border-[2px] hover:border-[3px] border-[#89bec1] group duration-200 cursor-pointer">
                                 <span
