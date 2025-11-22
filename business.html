@@ -29,7 +29,7 @@
     }
 </style>
 
-<body class="overflow-x-hidden">
+<body>
     <header class="fixed w-full top-0 z-50 bg-white flex flex-col justify-center items-center">
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
             <div class="max-w-[1440px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
@@ -86,14 +86,14 @@
 
                     <!-- menu -->
                     <div class="hidden md:grid w-5/7 grid-cols-5">
-                        <a href="index.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
-                            <span class="text-[12px] lg:text-[15px]">トップ</span>
-                        </a>
                         <div
                             class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
-                            <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
+                            <span class="text-[12px] lg:text-[15px]">トップ</span>
                         </div>
+                        <a href="about.html"
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
+                        </a>
                         <a href="business.html"
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">事業内容</span>
@@ -112,176 +112,30 @@
         </div>
     </header>
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
-    <div
-        class="fixed w-[45px] px-2 flex flex-col items-center space-y-4 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
-        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-        <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
-            <div id="scroll-circle"
-                class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
-            </div>
+    <section class="flex flex-col md:flex-row max-h-[630px] lg:h-[520px] xl:h-[500px]">
+        <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full relative">
+            <img class="w-full h-full object-cover absolute inset-0" src="assets/images/about_top.webp">
+            <h1>株式会社オアシス｜福祉用具の販売・貸与や訪問介護・看護</h1>
         </div>
-    </div>
-
-    <section class="w-full bg-white border-t border-b border-gray-200">
-        <div class="flex flex-row items-center px-8 md:px-12 lg:px-16 xl:px-32 py-4">
-            <nav class="flex space-x-4 text-[15px]">
-                <a href="index.html" class="text-gray-500 hover:text-[#89bec1]">トップ</a>
-                <span class="text-gray-400 font-bold">|</span>
-                <span class="text-[#89bec1] font-bold">オアシスとは</span>
-            </nav>
-        </div>
-    </section>
-
-    <section
-        class="w-full h-[800px] md:h-full max-h-[1225px] flex justify-center pt-20 md:py-28 lg:py-40 bg-[url('assets/images/fv_top.webp')] md:bg-cover bg-[75%] md:bg-center px-8">
-        <div class="max-w-[800px] flex flex-col gap-20 lg:gap-30 xl:gap-40 md:mr-64" bis_skin_checked="1">
-            <div class="flex-1 flex flex-col gap-8 md:w-[200px] lg:w-[300px] xl:w-[500px] max-w-[500px] "
-                bis_skin_checked="1">
-                <h1 class="text-white text-[28px] md:text-[22px] lg:text-[32px] xl:text-[37px] font-bold">
-                    <span class="text-[20px] md:text-[18px] lg:text-[22px] xl:text-[26px] block">
-                        オアシスとは
-                    </span>
-                    安心と希望の、その先へ。
-                    人を想い、社会を支える
-                    「心のオアシス」
+        <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full flex flex-row bg-[#89bec1]">
+            <div class="w-full flex flex-col py-36 px-32">
+                <h1 class="text-white font-bold text-left text-[33px] lg:text-[32px] xl:text-[43px] leading-[1.7]">
+                    事業案内
                 </h1>
-                <p
-                    class="text-white text-[12px] md:text-[10px] lg:text-[13px] xl:text-[17px] leading-[2.4] md:leading-[2]">
-                    A journey with MIEscape is built on a deep and abiding promise to our home. We are active partners
-                    in shaping a sustainable future for Ise-Shima. When you choose MIEscape, you become more than a
-                    visitor. You become a partner in protecting and nurturing the natural and cultural heritage of this
-                    extraordinary place.
-                </p>
             </div>
-            <div class="flex-1 flex flex-col gap-4 lg:gap-8 md:w-[200px] lg:w-[300px] xl:w-[400px] max-w-[400px] "
-                bis_skin_checked="1">
-                <h1 class="text-white text-[13px] md:text-[13px] lg:text-[15px] xl:text-[18px] block">
-                    Corporate Information
-                </h1>
-                <p
-                    class="text-white text-[11px] md:text-[10px] lg:text-[13px] xl:text-[15px] leading-[2.4] md:leading-[2]">
-                    Company Name: IST<br>
-                    Travel Agency License Number:<br>
-                    Class3-363 approved by the Govonor of Mie Prefectural Goverment<br>
-                    Address: 752-21 Shinmei, Ago-cho, Shima-shi, Mie 517-0502<br>
-                    Established: November 2016<br>
-                    President: Koji Nishida<br>
-                    Certified Travel Services Manager: Kazuhiko Yasu<br>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="flex justify-center items-center bg-[#e0f5f5]">
-        <div class="grid grid-cols-1 md:grid-cols-2 pt-32 pb-12">
-            <div class="flex flex-row justify-center items-center">
-                <div class="flex justify-center items-center py-10">
-                    <div
-                        class="relative flex flex-col items-center justify-center w-[400px] max-w-[400px] aspect-[1] mx-auto">
-                        <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-white blur-[10px] "></div>
-                        <!-- Top Circle: 物販 -->
-                        <div class="absolute -top-1/2 translate-y-[30%] left-1/2 -translate-x-1/2 z-10">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[32px] sm:text-[36px] font-bold leading-tight mb-2"
-                                        style="letter-spacing: 2px;">
-                                        物販
-                                    </p>
-                                    <p class="text-black text-[18px] sm:text-[19px] font-bold leading-tight mb-1">
-                                        福祉用具・衛生用品
-                                    </p>
-                                    <p class="text-black text-[15px] font-bold">
-                                        ／多メーカー
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Bottom Left Circle: 住まい -->
-                        <div
-                            class="absolute bottom-0 left-0 z-10 translate-x-[-30%] md:translate-x-[-45%] translate-y-[20%]">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[25px] sm:text-[28px] font-bold leading-tight mb-1"
-                                        style="letter-spacing: 1.5px;">
-                                        住まい
-                                    </p>
-                                    <p class="text-black text-[14px] md:text-[15px] font-bold leading-tight">
-                                        有料老人ホーム 等
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Bottom Right Circle: 介護サービス -->
-                        <div
-                            class="absolute bottom-0 right-0 z-10 translate-x-[30%] md:translate-x-[45%] translate-y-[20%]">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[25px] sm:text-[28px] font-bold leading-tight mb-1"
-                                        style="letter-spacing: 1.5px;">
-                                        介護サービス
-                                    </p>
-                                    <p class="text-black text-[14px] md:text-[15px] font-bold leading-tight">
-                                        在宅・通所・訪問 等
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Central oasis logo and company name -->
-                        <div
-                            class="z-20 relative flex flex-col items-center justify-center min-h-[250px] md:min-h-[300px]">
-                            <p class="text-[#90bbbd] text-[48px] font-bold leading-tight mb-1"
-                                style="letter-spacing: 2px;">
-                                oasis
-                            </p>
-                            <p class="text-[#90bbbd] text-[20px] md:text-[21px] font-bold mb-1">
-                                株式会社オアシス
-                            </p>
+            <div
+                class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
+                <div
+                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-4 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
+                    <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+                    <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
+                        <div id="scroll-circle"
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-full p-8 md:p-12 max-w-[760px]">
-                    <h2 class="text-[#89bec1] text-[28px] md:text-[32px] font-bold mb-2 leading-tight">オアシスの包括力</h2>
-                    <h3 class="text-[#89bec1] text-[22px] md:text-[24px] font-bold mb-6 leading-tight">― ひとつの窓口で、最適解まで ―
-                    </h3>
-                    <div class="text-black text-[15px] md:text-[16px] leading-relaxed font-bold space-y-4">
-                        <p>
-                            オアシスは、福祉用具・衛生用品などの物販に始まり、<br>
-                            現在では、有料老人ホームの運営、在宅・訪問介護、訪問看護など、<br>
-                            介護・医療・住環境の領域を横断したトータルサポートを提供しています。
-                        </p>
-                        <p>
-                            例えば、<br>
-                            施設運営者が抱える“多岐にわたる発注先の分散”や、<br>
-                            “現場と経営の両立”といった課題。<br>
-                            あるいは、ご家族が感じる“制度の煩雑さ”や“選択肢の多さ”といった不安。
-                        </p>
-                        <p>
-                            こうした状況に対し、オアシスは「ひとつの窓口」で、<br>
-                            対応可能な包括的枠組みを整備。
-                        </p>
-                        <p>
-                            ご利用者様を主―人ひとりの状況に寄り添いながら、<br>
-                            用具・設備の提案から、住まいの提供、介護・医療サービスの連携までを<br>
-                            ワンストップでお応えしています。
-                        </p>
-                        <p>
-                            相談・仕入れ・現場を掛け合わせた、オアシスならではの総合力が、<br>
-                            それぞれに、必要な支援をお届けします。
-                        </p>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
     <div id="menu_modal"
