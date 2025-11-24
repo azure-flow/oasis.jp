@@ -98,14 +98,14 @@
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">事業内容</span>
                         </a>
-                        <a href="company.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
-                            <span class="text-[12px] lg:text-[15px]">会社情報</span>
-                        </a>
                         <div
                             class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
-                            <span class="text-[12px] lg:text-[15px]">お問い合わせ</span>
+                            <span class="text-[12px] lg:text-[15px]">会社情報</span>
                         </div>
+                        <a href="contact.html"
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            <span class="text-[12px] lg:text-[15px]">お問い合わせ</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,83 +117,102 @@
             <nav class="flex space-x-8 text-[15px]">
                 <a href="index.html" class="text-gray-700 font-bold text-[16px] hover:text-[#89bec1]">トップ</a>
                 <span class="w-[2px] h-[25px] bg-gray-400"></span>
-                <span class="text-gray-700 font-bold text-[16px]">お問い合わせ</span>
+                <span class="text-gray-700 font-bold text-[16px]">プライバシーポリシー</span>
             </nav>
         </div>
     </section>
-    <section class="w-full bg-white py-6">
-        <div class="flex flex-row items-center px-8 md:px-12 lg:px-16 xl:px-32 py-4">
-            <div class="w-full flex flex-col items-center justify-center gap-24 pb-32">
-                <div class="w-full max-w-[800px] flex justify-start">
-                    <h2 class="text-[#90babd] text-[26px] font-bold pb-4">お問い合わせ</h2>
+    <section class="w-full flex justify-center">
+        <div class="w-full max-w-[800px] flex flex-col justify-center gap-6">
+            <div class="w-full py-10 flex flex-col gap-6 text-gray-800">
+                <h1 class="text-[#89bec1] text-[26px] md:text-[30px] font-bold mb-1">個人情報保護方針</h1>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    株式会社オアシス（以下「オアシス」といいます。）は、<br>
+                    個人情報の保護に関する法律（以下「個人情報保護法」といいます。）及び厚生労働省が策定した<br>
+                    「医療・介護関係事業者における個人情報の適切な取扱いのためのガイドライン」の規程、趣旨に基づき、<br>
+                    適切な個人情報の取扱いを実現するべく、個人情報保護基本⽅針を定めます。
                 </div>
-                <form class="w-full max-w-[800px] flex flex-col gap-8">
-                    <div class="flex flex-col md:flex-row items-start gap-4">
-                        <label for="name" class="w-[100px] font-bold text-[14px] md:text-[15px] mt-2 ml-2">お名前</label>
-                        <input id="name" name="name" type="text" placeholder="お名前をご入力ください"
-                            class="flex-1 border border-gray-400 px-4 py-3 text-[15px] focus:outline-none focus:border-[#89bec1]">
-                    </div>
-                    <div class="flex flex-col md:flex-row items-start gap-4">
-                        <label for="name"
-                            class="w-[100px] font-bold text-[14px] md:text-[15px] mt-2 ml-2">メールアドレス</label>
-                        <input id="name" name="name" type="text" placeholder="メールアドレスをご入力ください"
-                            class="flex-1 border border-gray-400 px-4 py-3 text-[15px] focus:outline-none focus:border-[#89bec1]">
-                    </div>
-                    <div class="flex flex-col md:flex-row items-start gap-4">
-                        <label for="name" class="w-[100px] font-bold text-[14px] md:text-[15px] mt-2 ml-2">題名</label>
-                        <input id="name" name="name" type="text" placeholder="件名をご入力ください"
-                            class="flex-1 border border-gray-400 px-4 py-3 text-[15px] focus:outline-none focus:border-[#89bec1]">
-                    </div>
-                    <div class="flex flex-col md:flex-row items-start gap-4">
-                        <label for="message"
-                            class="w-[100px] font-bold text-[14px] md:text-[15px] mt-2 ml-2">メッセージ</label>
-                        <textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください"
-                            class="flex-1 border border-gray-400 px-4 py-3 h-[180px] resize-none text-[15px] focus:outline-none focus:border-[#89bec1]"></textarea>
-                    </div>
-                    <div class="flex justify-center">
-                        <!-- <button type="submit" -->
-                        <a href="submit.html"
-                            class="flex items-center justify-between gap-4 px-12 py-4 bg-[#89bec1] text-white font-bold hover:bg-[#89bec1] duration-300 text-[16px]">
-                            送信する
-                            <span
-                                class="relative w-[24px] md:w-[20px] lg:w-[22px] xl:w-[25px] aspect-[1] rounded-full bg-white flex items-center justify-center text-[#89bec1] cursor-pointer hover:bg-white hover:text-[#89bec1] duration-300">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </a>
-                        <!-- </button> -->
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="w-full">
-        <div
-            class="flex justify-center items-center gap-20 max-h-[600px] h-[480px] md:h-full xl:h-[600px] md:py-28 lg:py-32 xl:py-40 bg-[url('assets/images/bg_contact.webp')] bg-center">
-            <div class="flex flex-col w-full md:w-[720px] lg:w-[800px] xl:w-full max-w-[1000px] gap-4 px-8 pb-12">
-                <div class="flex flex-col">
-                    <p class="font-bold text-center text-[16px] md:text-[15px]">CONTACT</p>
-                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">お問い合わせ
-                    </h2>
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-4 mb-2">
+                    1. 個人情報の取扱に関する基本的な考え方
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed">
+                    オアシスは、個人情報に関して適用される法令、規範を遵守することはもとより、<br>
+                    個人情報を適正に取り扱うための社内体制の構築と継続的な改善に努めて個⼈情報を保護します。<br>
+                    また、上記の考え⽅に基づき個人情報の取得、⼊⼿、利用の範囲等を社内外に明示致します。
                 </div>
-                <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 lg:gap-8 xl:gap-12">
-                    <div
-                        class="w-full h-[109px] md:h-auto md:w-1/2 flex justify-center items-center text-[17px] md:text-[20px] lg:text-[24px] xl:text-[27px] font-bold bg-white text-[#88bec0] cursor-pointer gap-2 hover:text-white hover:bg-[#88bec0] duration-300 select-none">
-                        <i class="fa-regular fa-clock"></i>
-                        お問い合わせフォーム
-                    </div>
-                    <div
-                        class="w-full h-[109px] md:h-full md:w-1/2 flex flex-col justify-center items-center bg-white p-2 xl:p-8 hover:bg-[#88bec0] duration-300 group select-none">
-                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談 </h2>
-                        <div
-                            class="text-[#88bec0] text-[28px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-bold gap-2 -my-2 group-hover:text-white cursor-pointer duration-300">
-                            <i class="fa-regular fa-clock"></i>
-                            0279-25-8939
-                        </div>
-                        <p
-                            class="hidden md:block text-[10px] md:text-[10px] lg:text-[14px] xl:text-[16px] font-bold pt-[3px]">
-                            営業時間：平日9:00〜18:00
-                        </p>
-                    </div>
+
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    2. 個人情報の定義
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    この基本指針において「個人情報」とは、オアシスが行う介護事業のお客様及び入社希望者等であり、<br>
+                    当該情報に含まれる氏名、生年月日、その他の記述等により<br>
+                    特定の個人を識別することができるものをいいます。<br><br>
+                    また、「お客様」とは現お客様、元お客様、現予定のお客様をいい、<br>
+                    サービスの提供時利用者及びそのご家族等に関する情報を含みます。
+                </div>
+
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    3. 個人情報の利用目的
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    オアシスが保有する個人情報は、以下の目的のために利用し、<br>
+                    ご本人の同意がある場合や法令で認められている場合を除き、適正に取扱います。<br><br>
+
+                    <span class="font-bold">(1) 介護等に関する個人情報</span><br>
+                    サービス提供等を行うため<br>
+                    相談対応、新規業務依頼、連絡、請求のため<br>
+                    各種会計および経理業務（請求明細、領収明細、会計、事業説明等、サービスに関して）のため<br>
+                    サービスご利用者の状況確認、管理、円滑な利用提供、利用者情報に基づく事業利用手続きのため<br>
+                    オアシスが行う事業・サービス等に関する案内・お知らせやお問い合わせ等への対応のため<br><br>
+
+                    <span class="font-bold">(2) 入社希望者に関する個人情報</span><br>
+                    採用活動、就職活動における手続等を行う目的のため
+                </div>
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    4. 個人情報の安全管理措置
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    オアシスは、個人情報への不正アクセス、個人情報の紛失、改ざん、漏えい等から個人情報を保護し、<br>
+                    正確性及び安全性を確保するため、組織的、人的、物理的及び技術的な安全管理措置を講じます。<br><br>
+                    また、個人データの取扱いの全部又は一部を委託する際は、<br>
+                    安全管理措置を適正に遵守できるよう内容を契約等に盛り込み徹底し、必要に応じて必要な監督を行います。
+                </div>
+
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    5. 従業者の監督
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    オアシスは、個人情報の安全管理措置を適切に実施できるよう、従業者に対し必要かつ適切な監督を行います。<br>
+                    また、従業者に対し、定期的な研修や周知徹底、指揮監督、指摘指示等の監督を行うものとします。
+                </div>
+
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    6. 個人情報の提供
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    オアシスは、御本人の同意なしに第三者への個人情報の提供は行いません。<br>
+                    ただし、法令その他の規範がアーメンするべき<br>
+                    法的上の義務等が発生する場合がありますが、この限りではありません。
+                </div>
+                <h2 class="text-[#89bec1] text-[21px] md:text-[22px] font-bold mt-8 mb-2">
+                    7. 個人情報の開示及び相談等
+                </h2>
+                <div class="text-[15px] md:text-[16px] leading-relaxed mb-6">
+                    オアシスは、ご本人又は代理人から、個人情報の開示を求められたときには、対応致します。<br>
+                    また、オアシスが当該の個人情報を保有していない場合、<br>
+                    又は、その他法令の理由により開示できない場合には、その旨をお知らせいたします。<br><br>
+                    <span class="font-bold">(1) 個人情報の開示等の窓口</span><br>
+                    開示等の請求手続きを行うご本人又は代理人は、以下に記載する窓口に書面にてご連絡ください。<br><br>
+                    〒551-0002<br>
+                    群馬県渋川市渋川1192-1 上毛ビル4F<br>
+                    株式会社 オアシス 宛<br><br>
+                    <span class="font-bold">(2) 個人情報の相談等の窓口</span><br>
+                    アミストの個人情報に関する苦情・ご相談については、次の窓口までお申し付けください。<br><br>
+                    〒551-0002<br>
+                    群馬県渋川市渋川1192-1 上毛ビル4F<br>
+                    株式会社 オアシス 個人情報相談窓口<br>
+                    連絡先：0279-258939<br>
+                    受付時間：9:00〜18:00（土曜日・振替休日・祝日・年末年始を除く）
                 </div>
             </div>
         </div>
@@ -246,13 +265,15 @@
                     </div>
                 </div>
                 <div class="w-full md:w-[65%] flex flex-col md:flex-row gap-8 ">
-                    <div class="w-full md:w-1/3 flex flex-col gap-2 border-white md:pl-3 xl:pl-8 min-w-[140px]">
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[140px]">
                         <a href="#"
                             class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">オアシスとは</a>
                         <a href="#"
                             class="text-white font-bold text-[21px] md:text-[12px] lg:text-[17px] hover:underline">会社情報</a>
                     </div>
-                    <div class="w-full md:w-1/3 flex flex-col gap-2 border-white md:pl-3 xl:pl-8 min-w-[180px]">
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[180px]">
                         <span
                             class="text-white font-semibold text-[21px] md:text-[12px] lg:text-[17px] mb-2">事業内容</span>
                         <a href="#"
@@ -281,7 +302,8 @@
                             住宅リフォーム
                         </a>
                     </div>
-                    <div class="w-full md:w-1/3 flex flex-col gap-2 border-white md:pl-3 xl:pl-8 min-w-[150px]">
+                    <div
+                        class="w-full md:w-1/3 flex flex-col gap-2 border-l-[1px] border-white pl-6 md:pl-3 xl:pl-8 min-w-[150px]">
                         <a href="#"
                             class="text-white text-[21px] md:text-[12px] lg:text-[17px] font-bold mb-2 hover:underline">プライバシーポリシー</a>
                         <a href="#"
@@ -291,6 +313,39 @@
             </div>
         </div>
     </div>
+
+    <section class="w-full">
+        <div
+            class="flex justify-center items-center gap-20 max-h-[600px] h-[480px] md:h-full xl:h-[600px] md:py-28 lg:py-32 xl:py-40 bg-[url('assets/images/bg_contact.webp')] bg-center">
+            <div class="flex flex-col w-full md:w-[720px] lg:w-[800px] xl:w-full max-w-[1000px] gap-4 px-8 pb-12">
+                <div class="flex flex-col">
+                    <p class="font-bold text-center text-[16px] md:text-[15px]">CONTACT</p>
+                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">お問い合わせ
+                    </h2>
+                </div>
+                <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+                    <div
+                        class="w-full h-[109px] md:h-auto md:w-1/2 flex justify-center items-center text-[17px] md:text-[20px] lg:text-[24px] xl:text-[27px] font-bold bg-white text-[#88bec0] cursor-pointer gap-2 hover:text-white hover:bg-[#88bec0] duration-300 select-none">
+                        <i class="fa-regular fa-clock"></i>
+                        お問い合わせフォーム
+                    </div>
+                    <div
+                        class="w-full h-[109px] md:h-full md:w-1/2 flex flex-col justify-center items-center bg-white p-2 xl:p-8 hover:bg-[#88bec0] duration-300 group select-none">
+                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談 </h2>
+                        <div
+                            class="text-[#88bec0] text-[28px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-bold gap-2 -my-2 group-hover:text-white cursor-pointer duration-300">
+                            <i class="fa-regular fa-clock"></i>
+                            0279-25-8939
+                        </div>
+                        <p
+                            class="hidden md:block text-[10px] md:text-[10px] lg:text-[14px] xl:text-[16px] font-bold pt-[3px]">
+                            営業時間：平日9:00〜18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="w-full bg-[#88bec0] py-16 md:max-h-[415px]">
         <div
@@ -387,6 +442,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
