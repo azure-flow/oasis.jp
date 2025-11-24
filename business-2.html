@@ -29,7 +29,7 @@
     }
 </style>
 
-<body class="overflow-x-hidden">
+<body>
     <header class="fixed w-full top-0 z-50 bg-white flex flex-col justify-center items-center">
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
             <div class="max-w-[1440px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
@@ -90,14 +90,14 @@
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">トップ</span>
                         </a>
+                        <a href="about.html"
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
+                        </a>
                         <div
                             class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
-                            <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
-                        </div>
-                        <a href="business.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">事業内容</span>
-                        </a>
+                        </div>
                         <a href="company.html"
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">会社情報</span>
@@ -112,165 +112,210 @@
         </div>
     </header>
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
-    <div
-        class="fixed w-[45px] px-2 flex flex-col items-center space-y-1 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
-        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-        <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
-            <div id="scroll-circle"
-                class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
+    <section class="flex flex-col md:flex-row max-h-[630px] lg:h-[520px] xl:h-[500px]">
+        <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full relative">
+            <img class="w-full h-full object-cover absolute inset-0" src="assets/images/about_top.webp">
+            <h1>株式会社オアシス｜福祉用具の販売・貸与や訪問介護・看護</h1>
+        </div>
+        <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full flex flex-row bg-[#89bec1]">
+            <div class="w-full flex flex-col justify-center px-32">
+                <h1 class="text-white font-bold text-left text-[33px] lg:text-[32px] xl:text-[43px] leading-[1.7]">
+                    訪問看護
+                </h1>
+                <p class="text-white font-bold text-[16px] lg:text-[18px] xl:text-[21px] pt-2 leading-[2]">
+                    オアシスの訪問看護サービスでは、看護師や療法士などの<br>
+                    専門職がご自宅を訪問し、医療的ケアやリハビリを提供し<br>
+                    ます。主治医の指示のもと、一人ひとりの状況に合わせた<br>
+                    専門的な支援で、住み慣れたご家庭での安心した療養生活<br>
+                    を支えます。
+                </p>
+            </div>
+            <div
+                class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
+                <div
+                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-1 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
+                    <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+                    <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
+                        <div id="scroll-circle"
+                            class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="w-full bg-white border-b border-gray-200 py-6">
+    <section class="w-full bg-white py-6">
         <div class="flex flex-row items-center px-8 md:px-12 lg:px-16 xl:px-32 py-4">
             <nav class="flex space-x-8 text-[15px]">
-                <a href="index.html" class="text-gray-600 font-bold text-[16px] hover:text-[#89bec1]">トップ</a>
+                <a href="index.html" class="text-gray-700 font-bold text-[16px] hover:text-[#89bec1]">トップ</a>
                 <span class="w-[2px] h-[25px] bg-gray-400"></span>
-                <span class="text-gray-600 font-bold text-[16px]">オアシスとは</span>
+                <span class="text-gray-700 font-bold text-[16px]">事業内容</span>
+                <span class="w-[2px] h-[25px] bg-gray-400"></span>
+                <span class="text-gray-700 font-bold text-[16px]">訪問看護</span>
             </nav>
         </div>
     </section>
 
-    <section
-        class="w-full h-[800px] md:h-full max-h-[1225px] flex justify-center pt-20 md:py-28 lg:py-40 bg-[url('assets/images/fv_top.webp')] md:bg-cover bg-[75%] md:bg-center px-8">
-        <div class="max-w-[800px] flex flex-col gap-20 lg:gap-30 xl:gap-40 md:mr-64" bis_skin_checked="1">
-            <div class="flex-1 flex flex-col gap-8 md:w-[200px] lg:w-[300px] xl:w-[500px] max-w-[500px] "
-                bis_skin_checked="1">
-                <h1 class="text-white text-[28px] md:text-[22px] lg:text-[32px] xl:text-[37px] font-bold">
-                    <span class="text-[20px] md:text-[18px] lg:text-[22px] xl:text-[26px] block">
-                        オアシスとは
-                    </span>
-                    安心と希望の、その先へ。
-                    人を想い、社会を支える
-                    「心のオアシス」
-                </h1>
-                <p
-                    class="text-white text-[12px] md:text-[10px] lg:text-[13px] xl:text-[17px] leading-[2.4] md:leading-[2]">
-                    高齢者やそのご家族、そして現場で奮闘する施設運営者の皆さま。<br>
-                    オアシスは、そんな皆さまが抱える不安や課題に対し、
-                    「安心」と「希望」を同時に届けられるよう、日々サービスを進化させています。<br>
-                    物販発祥で培った流通網と情報力を生かし、 介護現場で必要とされる製品・サービスを一括でご提供。
-                    住まいからケア、運営までをまるごと支えられる体制を構築しています。<br>
-                    これからの時代は、モノの供給だけでなく、
-                    「信頼できる存在」であることが問われる時代です。<br>
-                    私たちは、現場に根ざし、使う人・支える人の目線に立った
-                    温かく、無駄のないソリューションを提供し続けます。
-                </p>
+    <section class="w-full flex justify-center items-center border-y border-gray-200">
+        <div class="w-full max-w-[1000px] flex justify-center items-center">
+            <div id="filterTabs" class="flex w-full justify-center items-center">
+                <a href="business.html"
+                    class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="all">
+                    事業紹介TOP
+                </a>
+                <a href="business-1.html"
+                    class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="kokusai">
+                    訪問介護事業
+                </a>
+                <div class="filter-tab border-l-[1px] border-gray-300 text-white px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none bg-[#89bec1]"
+                    data-filter="japan">
+                    訪問看護事業
+                </div>
+                <a href="business-3.html"
+                    class="filter-tab border-x-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="group">
+                    福祉用具・消耗品住宅リフォーム
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="flex justify-center items-center bg-[#e0f5f5]">
-        <div class="grid grid-cols-1 md:grid-cols-2 pt-32 pb-12">
-            <div class="flex flex-row justify-center items-center">
-                <div class="flex justify-center items-center py-10">
-                    <div
-                        class="relative flex flex-col items-center justify-center w-[400px] max-w-[400px] aspect-[1] mx-auto">
-                        <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-white blur-[10px] "></div>
-                        <!-- Top Circle: 物販 -->
-                        <div class="absolute -top-1/2 translate-y-[30%] left-1/2 -translate-x-1/2 z-10">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[32px] sm:text-[36px] font-bold leading-tight mb-2"
-                                        style="letter-spacing: 2px;">
-                                        物販
-                                    </p>
-                                    <p class="text-black text-[18px] sm:text-[19px] font-bold leading-tight mb-1">
-                                        福祉用具・衛生用品
-                                    </p>
-                                    <p class="text-black text-[15px] font-bold">
-                                        ／多メーカー
-                                    </p>
-                                </div>
+    <section class="w-full flex justify-center py-10">
+        <div class="w-full max-w-[1440px] flex flex-col justify-center gap-6">
+            <div class="flex flex-col items-start">
+                <div class="flex flex-row">
+                    <div class="w-3 h-[32px] bg-[#9fc3c4] mr-3"></div>
+                    <span class="text-[#90babd] text-[20px] md:text-[21px] lg:text-[22px] font-bold leading-none">
+                        訪問看護サービス
+                    </span>
+                </div>
+                <div class="flex flex-row">
+                    <div class="w-3 h-[32px] bg-gray-400 mr-3 font-bold"></div>
+                    <span class="text-[16px] text-[#333] font-bold mt-1 ml-[2px]">Visiting nursing</span>
+                </div>
+            </div>
+            <div class="w-full bg-[#f6f0eb] flex flex-col gap-1 p-6">
+                <div class="w-full flex">
+                    <!-- Block 1: 日常生活の看護 -->
+                    <div class="w-[30%] mr-[2.5%]">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="日常生活の看護"
+                                class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">日常生活の看護</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    日常生活の支援や衛生管理、清潔や保清、運動のアシストに加え、療養者の精神的な安らぎをうながしています。 さらにご本人とご家族へ支援し、安心した在宅療養をサポートします。
+                                </p>
                             </div>
                         </div>
-                        <!-- Bottom Left Circle: 住まい -->
-                        <div
-                            class="absolute bottom-0 left-0 z-10 translate-x-[-30%] md:translate-x-[-45%] translate-y-[20%]">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[25px] sm:text-[28px] font-bold leading-tight mb-1"
-                                        style="letter-spacing: 1.5px;">
-                                        住まい
-                                    </p>
-                                    <p class="text-black text-[14px] md:text-[15px] font-bold leading-tight">
-                                        有料老人ホーム 等
-                                    </p>
-                                </div>
+                    </div>
+                    <!-- Block 2: 病状の観察 -->
+                    <div class="w-[35%] px-[2.5%] border-x-[2px] border-gray-300">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="病状の観察" class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">病状の観察</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    病状や障害の観察、体温や脈拍、血圧などの測定を通して健康状態の変化にいち早く気付いています。
+                                    さらに、医師の指示や専門的な処置にも対応、ご利用者様が安心して在宅での安定生活が送れるよう支援します。
+                                </p>
                             </div>
                         </div>
-                        <!-- Bottom Right Circle: 介護サービス -->
-                        <div
-                            class="absolute bottom-0 right-0 z-10 translate-x-[30%] md:translate-x-[45%] translate-y-[20%]">
-                            <div
-                                class="relative flex justify-center items-center w-[180px] h-[180px] md:w-[210px] md:h-[210px] rounded-full">
-                                <div class="absolute inset-0 z-0 rounded-full w-full h-full bg-[#fffcdf] blur-[10px]">
-                                </div>
-                                <div class="relative text-center z-10 flex flex-col items-center">
-                                    <p class="text-[#89bec1] text-[25px] sm:text-[28px] font-bold leading-tight mb-1"
-                                        style="letter-spacing: 1.5px;">
-                                        介護サービス
-                                    </p>
-                                    <p class="text-black text-[14px] md:text-[15px] font-bold leading-tight">
-                                        在宅・通所・訪問 等
-                                    </p>
-                                </div>
+                    </div>
+                    <!-- Block 3: ターミナルケア -->
+                    <div class="w-[30%] ml-[2.5%]">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="ターミナルケア"
+                                class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">ターミナルケア</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    病状や障害の程度により身体的苦痛を和らげるとともに、ご利用者様やご家族への精神的心の援助にも寄り添っています。
+                                    看取りの時期には、最期の時期についての緩和ケアやアドバイスもいたします。
+                                </p>
                             </div>
                         </div>
-                        <!-- Central oasis logo and company name -->
-                        <div
-                            class="z-20 relative flex flex-col items-center justify-center min-h-[250px] md:min-h-[300px]">
-                            <p class="text-[#90bbbd] text-[48px] font-bold leading-tight mb-1"
-                                style="letter-spacing: 2px;">
-                                oasis
-                            </p>
-                            <p class="text-[#90bbbd] text-[20px] md:text-[21px] font-bold mb-1">
-                                株式会社オアシス
-                            </p>
+                    </div>
+                </div>
+                <hr class="w-full border-gray-300 my-6 border-[1px]">
+                <div class="w-full flex">
+                    <!-- Block 1: 日常生活の看護 -->
+                    <div class="w-[30%] mr-[2.5%]">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="日常生活の看護"
+                                class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">日常生活の看護</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    日常生活の支援や衛生管理、清潔や保清、運動のアシストに加え、療養者の精神的な安らぎをうながしています。 さらにご本人とご家族へ支援し、安心した在宅療養をサポートします。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Block 2: 病状の観察 -->
+                    <div class="w-[35%] px-[2.5%] border-x-[2px] border-gray-300">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="病状の観察" class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full gap-4">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">病状の観察</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    病状や障害の観察、体温や脈拍、血圧などの測定を通して健康状態の変化にいち早く気付いています。
+                                    さらに、医師の指示や専門的な処置にも対応、ご利用者様が安心して在宅での安定生活が送れるよう支援します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Block 3: ターミナルケア -->
+                    <div class="w-[30%] ml-[2.5%]">
+                        <div class="flex flex-col h-full">
+                            <img src="assets/images/business02.webp" alt="ターミナルケア"
+                                class="w-full aspect-[2] object-cover">
+                            <div class="py-4 flex flex-col h-full">
+                                <h4 class="text-[#90babd] text-[17px] font-bold mb-2">ターミナルケア</h4>
+                                <p class="text-[#333] text-[15px] leading-relaxed font-bold">
+                                    病状や障害の程度により身体的苦痛を和らげるとともに、ご利用者様やご家族への精神的心の援助にも寄り添っています。
+                                    看取りの時期には、最期の時期についての緩和ケアやアドバイスもいたします。
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <div class="w-full p-8 md:p-12 max-w-[760px]">
-                    <h2 class="text-[#89bec1] text-[28px] md:text-[32px] font-bold mb-2 leading-tight">オアシスの包括力</h2>
-                    <h3 class="text-[#89bec1] text-[22px] md:text-[24px] font-bold mb-6 leading-tight">― ひとつの窓口で、最適解まで ―
-                    </h3>
-                    <div class="text-black text-[15px] md:text-[16px] leading-relaxed font-bold space-y-4">
-                        <p>
-                            オアシスは、福祉用具・衛生用品などの物販に始まり、<br>
-                            現在では、有料老人ホームの運営、在宅・訪問介護、訪問看護など、<br>
-                            介護・医療・住環境の領域を横断したトータルサポートを提供しています。
-                        </p>
-                        <p>
-                            例えば、<br>
-                            施設運営者が抱える“多岐にわたる発注先の分散”や、<br>
-                            “現場と経営の両立”といった課題。<br>
-                            あるいは、ご家族が感じる“制度の煩雑さ”や“選択肢の多さ”といった不安。
-                        </p>
-                        <p>
-                            こうした状況に対し、オアシスは「ひとつの窓口」で、<br>
-                            対応可能な包括的枠組みを整備。
-                        </p>
-                        <p>
-                            ご利用者様を主―人ひとりの状況に寄り添いながら、<br>
-                            用具・設備の提案から、住まいの提供、介護・医療サービスの連携までを<br>
-                            ワンストップでお応えしています。
-                        </p>
-                        <p>
-                            相談・仕入れ・現場を掛け合わせた、オアシスならではの総合力が、<br>
-                            それぞれに、必要な支援をお届けします。
-                        </p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center py-10">
+        <div class="max-w-[1440px] w-full bg-[#f6f0eb] p-16 flex flex-col gap-8">
+            <h3 class="text-[#90babd] text-[20px] lg:text-[24px] xl:text-[28px] font-bold">対応可能患者</h3>
+            <div class="w-full flex flex-col md:flex-row md:justify-between gap-4 px-24">
+                <ul class="text-[#333] text-[15px] lg:text-[18px] xl:text-[20px] font-bold leading-relaxed space-y-2">
+                    <li>◎ガン末期</li>
+                    <li>◎熱傷後</li>
+                    <li>◎たん吸引</li>
+                    <li>◎インシュリン投与</li>
+                </ul>
+                <ul class="text-[#333] text-[15px] lg:text-[18px] xl:text-[20px] font-bold leading-relaxed space-y-2">
+                    <li>◎中心静脈栄養</li>
+                    <li>◎尿バルーン</li>
+                    <li>◎透析</li>
+                    <li>◎肺瘻</li>
+                </ul>
+                <ul class="text-[#333] text-[15px] lg:text-[18px] xl:text-[20px] font-bold leading-relaxed space-y-2">
+                    <li>◎胃ろう</li>
+                    <li>◎在宅酸素</li>
+                    <li>◎ペースメーカー</li>
+                    <li>◎筋萎縮性側索硬化症</li>
+                </ul>
+                <ul class="text-[#333] text-[15px] lg:text-[18px] xl:text-[20px] font-bold leading-relaxed space-y-2">
+                    <li>◎気道切開</li>
+                    <li>◎ストーマ</li>
+                </ul>
             </div>
+            <p class="pt-16 text-[#2d2d2d] text-[16px] text-center font-bold">その他の病気の方でも支えたい看護を参考にあります。お気軽にご相談ください</p>
+        </div>
     </section>
 
     <div id="menu_modal"

@@ -86,18 +86,18 @@
 
                     <!-- menu -->
                     <div class="hidden md:grid w-5/7 grid-cols-5">
-                        <div
-                            class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                        <a href="index.html"
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">トップ</span>
-                        </div>
+                        </a>
                         <a href="about.html"
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
                         </a>
-                        <a href="business.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                        <div
+                            class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">事業内容</span>
-                        </a>
+                        </div>
                         <a href="company.html"
                             class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
                             <span class="text-[12px] lg:text-[15px]">会社情報</span>
@@ -126,7 +126,7 @@
             <div
                 class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
                 <div
-                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-4 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
+                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-1 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
                     <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
                     <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
                         <div id="scroll-circle"
@@ -136,6 +136,134 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="w-full bg-white py-6">
+        <div class="flex flex-row items-center px-8 md:px-12 lg:px-16 xl:px-32 py-4">
+            <nav class="flex space-x-8 text-[15px]">
+                <a href="index.html" class="text-gray-600 font-bold text-[16px] hover:text-[#89bec1]">トップ</a>
+                <span class="w-[2px] h-[25px] bg-gray-400"></span>
+                <span class="text-gray-600 font-bold text-[16px]">業務内容</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center items-center border-y border-gray-200">
+        <div class="w-full max-w-[1000px] flex justify-center items-center">
+            <div id="filterTabs" class="flex w-full justify-center items-center">
+                <div 
+                    class="filter-tab border-l-[1px] border-gray-300 text-white px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none bg-[#89bec1] select-none"
+                    data-filter="all">
+                    事業紹介TOP
+                </div>
+                <a href="business-1.html"
+                    class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="kokusai">
+                    訪問介護事業
+                </a>
+                <a href="business-2.html" class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="japan">
+                    訪問看護事業
+                </a>
+                <a href="business-3.html"
+                    class="filter-tab border-x-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                    data-filter="group">
+                    福祉用具・消耗品住宅リフォーム
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center pb-10">
+        <div class="w-full max-w-[1440px] flex flex-col items-center justify-center">
+            <div class="w-full flex flex-col md:flex-row">
+                <div
+                    class="flex flex-col items-start justify-center w-full md:w-1/2 px-8 md:px-12 lg:px-20 xl:px-24 gap-10 border-b-[1px] border-gray-200 py-10">
+                    <h3 class="text-[22px] md:text-[24px] lg:text-[28px] xl:text-[35px] font-bold text-[#89bec1]">
+                        オアシスが叶える、<br> 福祉のワンストップサポート。
+                    </h3>
+                    <p class="text-[14px] md:text-[13px] lg:text-[15px] xl:text-[16px] font-bold leading-[1.8]">
+                        オアシスは、高齢者やご家族、そして施設運営者にとって<br>
+                        “心の拠り所”となる存在を目指しています。<br>
+                        長年培った介護用品の仕入れ力と情報力を強みに、<br>
+                        介護サービスから住まいまでを<br>
+                        一貫して支える包括力を備えています。<br>
+                        日々の安心と、これからの希望。その両方を大切にしながら、<br>
+                        コストの最適化と安心を両立する 福祉サービス をお届けします。<br>
+                    </p>
+                </div>
+                <div class="relative w-full md:w-1/2 h-[305px] md:h-full">
+                    <img class="w-full h-full object-cover absolute inset-0" src="assets/images/about_top.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center py-10">
+        <div class="max-w-[1440px] w-full grid grid-cols-2 gap-4">
+            <div class="w-full bg-[#f6f0eb] flex items-center px-4 md:px-8 py-6 shadow-sm border border-[#eee]">
+                <div class="w-1/2 h-full flex items-center">
+                    <img src="assets/images/business01.webp" alt="有料老人ホームの部屋" class="w-full object-cover shadow" />
+                </div>
+                <div class="flex-1 flex flex-col h-full pl-7 gap-12">
+                    <h4 class="text-[#7FC9CE] text-[20px] font-bold mb-2">有料老人ホーム事業</h4>
+                    <p class="text-[#333] text-[16px] leading-[1.8]20852/  zaA  querySelectorAll 32  ` font-bold mb-5">
+                        手すりの取付・段差の解消・洋式便器への取り替えなど、<br>
+                        所定の小規模な改修を行ったときに介護保険から20万円<br>
+                        （うちご利用される負担額は1～3割）を<br>
+                        限度にその費用が支給されます。
+                    </p>
+                    <div class="flex flex-col gap-2">
+                        <a href="#"
+                            class="flex items-center w-fit px-4 py-2 rounded-full border border-[#AEE2E4] text-[#7FC9CE] font-bold text-[15px] hover:bg-[#E0F6F6] transition">
+                            在宅型有料老人ホーム咲楽
+                            <span
+                                class="ml-2 flex items-center justify-center w-5 h-5 rounded-full text-white bg-[#AEE2E4]">
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </span>
+                        </a>
+                        <a href="#"
+                            class="flex items-center w-fit px-4 py-2 rounded-full border border-[#AEE2E4] text-[#7FC9CE] font-bold text-[15px] hover:bg-[#E0F6F6] transition">
+                            住宅型有料老人ホーム日向
+                            <span
+                                class="ml-2 flex items-center justify-center w-5 h-5 rounded-full text-white bg-[#AEE2E4]">
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-[#f6f0eb] flex items-center px-4 md:px-8 py-6 shadow-sm border border-[#eee]">
+                <div class="w-1/2 h-full flex items-center">
+                    <img src="assets/images/business01.webp" alt="有料老人ホームの部屋" class="w-full object-cover shadow" />
+                </div>
+                <div class="flex-1 flex flex-col justify-center h-full pl-7">
+                    <h4 class="text-[#7FC9CE] text-[20px] font-bold mb-2">有料老人ホーム事業</h4>
+                    <p class="text-[#333] text-[16px] leading-[1.8]20852/  zaA  querySelectorAll 32  ` font-bold mb-5">
+                        手すりの取付・段差の解消・洋式便器への取り替えなど、<br>
+                        所定の小規模な改修を行ったときに介護保険から20万円<br>
+                        （うちご利用される負担額は1～3割）を<br>
+                        限度にその費用が支給されます。
+                    </p>
+                    <div class="w-full flex justify-end">
+                        <div
+                            class="flex w-[140px] h-[140px] justify-center items-center mr-8 md:pr-0 transform transition-transform duration-200">
+                            <div
+                                class="relative flex justify-center items-center w-[100px] hover:w-[140px] aspect-[1] rounded-full bg-[#f6f0eb] border-[2px] hover:border-[3px] border-[#89bec1] group duration-200 cursor-pointer">
+                                <span class="relative w-[10px] aspect-[1] rounded-full bg-[#89bec1] duration-200">
+                                    <p
+                                        class="w-[70px] absolute left-[25px] -bottom-[5px] bg-[#f6f0eb] text-[15px] text-[#89bec1] font-bold duration-200">
+                                        View More
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </section>
 
     <div id="menu_modal"
@@ -233,6 +361,39 @@
             </div>
         </div>
     </div>
+
+    <section class="w-full">
+        <div
+            class="flex justify-center items-center gap-20 max-h-[600px] h-[480px] md:h-full xl:h-[600px] md:py-28 lg:py-32 xl:py-40 bg-[url('assets/images/bg_contact.webp')] bg-center">
+            <div class="flex flex-col w-full md:w-[720px] lg:w-[800px] xl:w-full max-w-[1000px] gap-4 px-8 pb-12">
+                <div class="flex flex-col">
+                    <p class="font-bold text-center text-[16px] md:text-[15px]">CONTACT</p>
+                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">お問い合わせ
+                    </h2>
+                </div>
+                <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+                    <div
+                        class="w-full h-[109px] md:h-auto md:w-1/2 flex justify-center items-center text-[17px] md:text-[20px] lg:text-[24px] xl:text-[27px] font-bold bg-white text-[#88bec0] cursor-pointer gap-2 hover:text-white hover:bg-[#88bec0] duration-300 select-none">
+                        <i class="fa-regular fa-clock"></i>
+                        お問い合わせフォーム
+                    </div>
+                    <div
+                        class="w-full h-[109px] md:h-full md:w-1/2 flex flex-col justify-center items-center bg-white p-2 xl:p-8 hover:bg-[#88bec0] duration-300 group select-none">
+                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談 </h2>
+                        <div
+                            class="text-[#88bec0] text-[28px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-bold gap-2 -my-2 group-hover:text-white cursor-pointer duration-300">
+                            <i class="fa-regular fa-clock"></i>
+                            0279-25-8939
+                        </div>
+                        <p
+                            class="hidden md:block text-[10px] md:text-[10px] lg:text-[14px] xl:text-[16px] font-bold pt-[3px]">
+                            営業時間：平日9:00〜18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="w-full bg-[#88bec0] py-16 md:max-h-[415px]">
         <div
