@@ -29,7 +29,7 @@
     }
 </style>
 
-<body>
+<body class="relative">
     <header class="fixed w-full top-0 z-50 bg-white flex flex-col justify-center items-center">
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
             <div class="max-w-[1440px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
@@ -76,13 +76,13 @@
             <div class="max-w-[1440px] w-full flex flex-row justify-between md:px-4 lg:px-12 xl:px-16">
                 <div class="w-full flex justify-between">
                     <!-- logo -->
-                    <div
-                        class="hidden md:flex w-2/7 items-end col-span-2 font-gothic text-[#89bec1] text-[14px] lg-[text-[15px] xl:text-[19px] gap-2 mb-4">
+                    <a href="index.html"
+                        class="hidden md:flex w-2/7 items-end col-span-2 font-gothic text-[#89bec1] text-[14px] lg-[text-[15px] xl:text-[19px] gap-2 mb-4 cursor-pointer select-none">
                         <div class="text-[48px] md:text-[32px] lg:text-[36px] lg:text-[48px] xl:text-[57px] font-bold">
                             oasis
                         </div>
                         <div class=" mb-1 lg:mb-3 xl:mb-4">株式会社オアシス</div>
-                    </div>
+                    </a>
 
                     <!-- menu -->
                     <div class="hidden md:grid w-5/7 grid-cols-5">
@@ -111,9 +111,46 @@
             </div>
         </div>
     </header>
+    <div
+        class="absolute w-[36px] lg:w-[45px] h-[270px] md:h-[70vh] bg-[#89bec1] md:bg-white  flex items-end justify-center pb-2 z-40 top-[366px] md:top-0 right-[18px] md:right-[17px] lg:right-7 xl:right-8 translate-x-1/2">
+        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+    </div>
+    <div id="scroll-circle"
+        class="fixed flex items-end justify-center w-[36px] lg:w-[45px] right-[18px] md:right-[17px] lg:right-7 xl:right-8 translate-x-1/2 z-30 bottom-[20vh]">
+        <div class="flex flex-col items-center justify-center">
+            <div id="scroll-line"
+                class="scroll-line h-[100vh] relative w-[2px] bg-gray-400 transition-all duration-200 ease-linear">
+            </div>
+            <div
+                class="relative w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-all duration-200 ease-linear ">
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            const scrollCircle = document.getElementById('scroll-circle');
+
+            function updateScrollCircle() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight;
+                const winHeight = window.innerHeight;
+
+                const maxScroll = docHeight - winHeight;
+                const progress = Math.min(scrollTop / maxScroll, 1); // 0 → 1
+
+                // Move from 20vh → 0vh using calc()
+                scrollCircle.style.bottom = `calc(20vh * ${1 - progress})`;
+            }
+
+            window.addEventListener('scroll', updateScrollCircle);
+            window.addEventListener('resize', updateScrollCircle);
+            document.addEventListener('DOMContentLoaded', updateScrollCircle);
+        })();
+    </script>
+
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
     <section class="flex flex-col md:flex-row max-h-[630px] lg:h-[520px] xl:h-[630px]">
-        <div class="w-full md:w-2/3 h-[290px] md:h-[400px] lg:h-full relative">
+        <div class="w-full md:w-2/3 h-[290px] md:h-[400px] lg:h-full relative z-[50] md:z-0">
             <img class="w-full h-full object-cover absolute inset-0" src="assets/images/fv_top.webp">
             <h1>株式会社オアシス｜福祉用具の販売・貸与や訪問介護・看護</h1>
         </div>
@@ -127,16 +164,7 @@
                 </p>
             </div>
             <div
-                class="relative md:w-[36px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
-                <div
-                    class="fixed w-[45px] px-2 flex flex-col items-center space-y-1 z-40 right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
-                    <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-                    <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
-                        <div id="scroll-circle"
-                            class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
-                        </div>
-                    </div>
-                </div>
+                class="relative md:w-[40px] lg:w-[80px] xl:w-[100px] bg-[#89bec1] md:bg-white flex justify-center items-end">
             </div>
         </div>
     </section>
@@ -248,6 +276,10 @@
             <div class="relative w-full flex flex-col items-end justify-center pb-6 md:pb-0">
                 <div class="w-full overflow-hidden md:-mb-7 lg:-mb-9 xl:-mb-10 whitespace-nowrap">
                     <div class="inline-block animate-flow will-change-transform">
+                        <h2
+                            class="inline-block text-white text-[91px] md:text-[100px] lg:text-[120px] xl:text-[137px] font-bold tracking-[5px] mr-16">
+                            All about welfare here
+                        </h2>
                         <h2
                             class="inline-block text-white text-[91px] md:text-[100px] lg:text-[120px] xl:text-[137px] font-bold tracking-[5px] mr-16">
                             All about welfare here
@@ -517,7 +549,8 @@
             <div class="flex flex-col w-full md:w-[720px] lg:w-[800px] xl:w-full max-w-[1000px] gap-4 px-8 pb-12">
                 <div class="flex flex-col">
                     <p class="font-bold text-center text-[16px] md:text-[15px]">CONTACT</p>
-                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">お問い合わせ
+                    <h2 class="font-bold text-center text-[28px] md:text-[24px] lg:text-[32px]  xl:text-[35px]">
+                        お問い合わせ
                     </h2>
                 </div>
                 <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4 lg:gap-8 xl:gap-12">
@@ -528,7 +561,8 @@
                     </div>
                     <div
                         class="w-full h-[109px] md:h-full md:w-1/2 flex flex-col justify-center items-center bg-white p-2 xl:p-8 hover:bg-[#88bec0] duration-300 group select-none">
-                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談 </h2>
+                        <h2 class="text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] font-bold">お電話でのご相談
+                        </h2>
                         <div
                             class="text-[#88bec0] text-[28px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-bold gap-2 -my-2 group-hover:text-white cursor-pointer duration-300">
                             <i class="fa-regular fa-clock"></i>
