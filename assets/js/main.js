@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // // for scroll motion
-    // const circle = document.getElementById('scroll-circle');
-    // const line = document.getElementById('scroll-line');
+    // for scroll motion
+    const circle = document.getElementById('scroll-circle');
+    const line = document.getElementById('scroll-line');
 
-    // window.addEventListener('scroll', () => {
-    //     const maxScroll = document.documentElement.scrollHeight - innerHeight;
-    //     const scrollPercent = scrollY / maxScroll;
+    window.addEventListener('scroll', () => {
+        const maxScroll = document.documentElement.scrollHeight - innerHeight;
+        const scrollPercent = scrollY / maxScroll;
 
-    //     const lineHeight = line.offsetHeight;
-    //     const circleHeight = circle.offsetHeight;
+        const lineHeight = line.offsetHeight;
+        const circleHeight = circle.offsetHeight;
 
-    //     const move = scrollPercent * (lineHeight - circleHeight);
+        const move = scrollPercent * (lineHeight - circleHeight);
 
-    //     circle.style.top = `${move}px`;
-    // });
+        circle.style.top = `${move}px`;
+    });
 
     // Haumburger Button to open menu on smartphone
 

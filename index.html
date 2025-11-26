@@ -87,23 +87,23 @@
                     <!-- menu -->
                     <div class="hidden md:grid w-5/7 grid-cols-5">
                         <div
-                            class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            class="border-t-4 border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer  duration-300">
                             <span class="text-[12px] lg:text-[15px]">トップ</span>
                         </div>
                         <a href="about.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer  duration-300">
                             <span class="text-[12px] lg:text-[15px]">オアシスとは</span>
                         </a>
                         <a href="business.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer  duration-300">
                             <span class="text-[12px] lg:text-[15px]">事業内容</span>
                         </a>
                         <a href="company.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer  duration-300">
                             <span class="text-[12px] lg:text-[15px]">会社情報</span>
                         </a>
                         <a href="contact.html"
-                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer hover:bg-gray-100 duration-300">
+                            class="border-t-4 border-t-transparent hover:border-t-[#89bec1] px-4 border-l-[1px] border-gray-200 font-bold flex justify-center items-center cursor-pointer  duration-300">
                             <span class="text-[12px] lg:text-[15px]">お問い合わせ</span>
                         </a>
                     </div>
@@ -112,41 +112,14 @@
         </div>
     </header>
     <div
-        class="absolute w-[36px] lg:w-[45px] h-[270px] md:h-[70vh] bg-[#89bec1] md:bg-white  flex items-end justify-center pb-2 z-40 top-[366px] md:top-0 right-[18px] md:right-[17px] lg:right-7 xl:right-8 translate-x-1/2">
+        class="fixed w-[45px] px-2 flex flex-col items-center space-y-1 z-40 top-[65vh] right-1 md:-right-[5px] lg:right-[10px] xl:right-4">
         <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
-    </div>
-    <div id="scroll-circle"
-        class="fixed flex items-end justify-center w-[36px] lg:w-[45px] right-[18px] md:right-[17px] lg:right-7 xl:right-8 translate-x-1/2 z-30 bottom-[20vh]">
-        <div class="flex flex-col items-center justify-center">
-            <div id="scroll-line"
-                class="scroll-line h-[100vh] relative w-[2px] bg-gray-400 transition-all duration-200 ease-linear">
-            </div>
-            <div
-                class="relative w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-all duration-200 ease-linear ">
+        <div id="scroll-line" class="relative w-[2px] h-[80px] bg-gray-400">
+            <div id="scroll-circle"
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
             </div>
         </div>
     </div>
-    <script>
-        (function () {
-            const scrollCircle = document.getElementById('scroll-circle');
-
-            function updateScrollCircle() {
-                const scrollTop = window.scrollY;
-                const docHeight = document.documentElement.scrollHeight;
-                const winHeight = window.innerHeight;
-
-                const maxScroll = docHeight - winHeight;
-                const progress = Math.min(scrollTop / maxScroll, 1); // 0 → 1
-
-                // Move from 20vh → 0vh using calc()
-                scrollCircle.style.bottom = `calc(20vh * ${1 - progress})`;
-            }
-
-            window.addEventListener('scroll', updateScrollCircle);
-            window.addEventListener('resize', updateScrollCircle);
-            document.addEventListener('DOMContentLoaded', updateScrollCircle);
-        })();
-    </script>
 
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
     <section class="flex flex-col md:flex-row max-h-[630px] lg:h-[520px] xl:h-[630px]">
