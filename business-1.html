@@ -32,7 +32,7 @@
 <body>
     <header class="fixed w-full top-0 z-50 bg-white flex flex-col justify-center items-center">
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
-            <div class="max-w-[1440px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
+            <div class="max-w-[1200px] w-full flex flex-row justify-between px-4 md:px-4 lg:px-12 xl:px-16 py-2">
                 <div>
                     <div class="font-medium text-[10px] md:text-[13px] lg:text-[14px]">
                         福祉関連の総合サービス
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="flex justify-center w-full border-b-[1px] border-gray-200 ">
-            <div class="max-w-[1440px] w-full flex flex-row justify-between md:px-4 lg:px-12 xl:px-16">
+            <div class="max-w-[1200px] w-full flex flex-row justify-between md:px-4 lg:px-12 xl:px-16">
                 <div class="w-full flex justify-between">
                     <!-- logo -->
                     <a href="index.html"
@@ -114,18 +114,17 @@
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
     <section class="flex flex-col md:flex-row max-h-[630px] lg:h-[520px] xl:h-[500px]">
         <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full relative">
-            <img class="w-full h-full object-cover absolute inset-0" src="assets/images/fv-business.webp">
+            <img class="w-full h-full object-cover absolute inset-0" src="assets/images/fv-homw-care.webp">
             <h1>株式会社オアシス｜福祉用具の販売・貸与や訪問介護・看護</h1>
         </div>
         <div class="w-full md:w-1/2 h-[290px] md:h-[400px] lg:h-full flex flex-row bg-[#89bec1]">
-            <div class="w-full flex flex-col py-20 lg:py-36 px-12 md:px-16 lg:px-24 xl:px-32">
-                <h1
-                    class="text-white text-center font-bold md:text-left text-[33px] lg:text-[36px] xl:text-[40px] leading-[1.7]">
+            <div class="w-full flex flex-col py-8 lg:py-36 px-12 md:px-16 lg:px-24 xl:px-32">
+                <h1 class="text-white text-left font-bold text-[33px] lg:text-[36px] xl:text-[40px] leading-[1.7]">
                     訪問介護
                 </h1>
                 <p class="text-white font-bold text-[16px] lg:text-[18px] xl:text-[21px] pt-2 leading-[2]">
-                    オアシスの訪問サービスでは、看護師や療法士による医<br>
-                    療ケアと、ヘルパーによる介護・生活援助を提供。医療<br>
+                    オアシスの訪問サービスでは、看護師や療法士による医<br class="hidden md:block">
+                    療ケアと、ヘルパーによる介護・生活援助を提供。医療<br class="hidden md:block">
                     と生活の両面から、ご自宅での安心を支えます。
                 </p>
             </div>
@@ -144,235 +143,237 @@
         </div>
     </section>
 
-    <section class="w-full bg-white py-6">
-        <div class="flex flex-row items-center px-8 md:px-12 lg:px-16 xl:px-32 py-4">
-            <nav class="flex space-x-8 text-[15px]">
-                <a href="index.html" class="text-gray-700 font-bold text-[16px] hover:text-[#89bec1]">トップ</a>
-                <span class="w-[2px] h-[25px] bg-gray-400"></span>
-                <span class="text-gray-700 font-bold text-[16px]">事業内容</span>
-                <span class="w-[2px] h-[25px] bg-gray-400"></span>
-                <span class="text-gray-700 font-bold text-[16px]">訪問介護</span>
+    <section class="w-full bg-white border-gray-200 pt-1 px-8 md:px-12 lg:px-16 xl:px-32 pb-4 md:py-2 lg:py-3 xl:py-6">
+        <div class="max-w-[1200px] w-full mx-auto flex flex-row items-center py-4">
+            <nav class="flex items-start lg:space-x-8 space-x-4 text-[15px]">
+                <a href="index.html"
+                    class="text-gray-600 font-bold text-[10px] md:text-[12px] xl:text-[14px] hover:text-[#88BEC0]">トップ</a>
+                <span class="w-[2px] h-[15px] md:h-[17px] lg:h-[22px] xl:h-[25px] bg-gray-400"></span>
+                <span class="text-gray-600 font-bold text-[10px] md:text-[12px] xl:text-[14px]">事業内容</span>
+                <span class="w-[2px] h-[15px] md:h-[17px] lg:h-[22px] xl:h-[25px] bg-gray-400"></span>
+                <span class="text-gray-600 font-bold text-[10px] md:text-[12px] xl:text-[14px]">訪問介護</span>
             </nav>
         </div>
     </section>
 
     <section class="w-full flex justify-center items-center border-y border-gray-200">
         <div class="w-full max-w-[1000px] flex justify-center items-center">
-            <div id="filterTabs" class="flex w-full justify-center items-center">
-                <a href="business.html"
-                    class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
-                    data-filter="all">
-                    事業紹介TOP
-                </a>
-                <div class="filter-tab border-l-[1px] border-gray-300 text-white px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none bg-[#89bec1]"
-                    data-filter="kokusai">
-                    訪問介護事業
+            <div id="filterTabs" class="flex flex-col md:flex-row w-full justify-center items-center">
+                <div class="w-full md:w-auto flex">
+                    <a href="business.html"
+                        class="w-full md:w-auto filter-tab border-l-[1px] border-gray-300 text-[#222] text-center px-4 md:px-5 lg:px-12 py-2 h-full text-[10px] md:text-[12px] xl:text-[14px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none select-none"
+                        data-filter="all">
+                        事業紹介TOP
+                    </a>
+                    <div class="w-full md:w-auto filter-tab border-r-[1px] md:border-r-0 border-l-[1px] border-gray-300 text-white text-center px-4 md:px-5 lg:px-12 py-2 h-full text-[10px] md:text-[12px] xl:text-[14px] cursor-pointer font-bold whitespace-nowrap transition-colors bg-[#89bec1] duration-300 select-none"
+                        data-filter="kokusai">
+                        訪問介護事業
+                    </div>
                 </div>
-                <a href="business-2.html"
-                    class="filter-tab border-l-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
-                    data-filter="japan">
-                    訪問看護事業
-                </a>
-                <a href="business-3.html"
-                    class="filter-tab border-x-[1px] border-gray-300 text-[#222] px-5 py-2 h-full text-[13px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
-                    data-filter="group">
-                    福祉用具・消耗品住宅リフォーム
-                </a>
+                <div class="w-full md:w-auto flex">
+                    <a href="business-2.html"
+                        class="w-full md:w-auto filter-tab border-l-[1px] border-t-[1px] md:border-t-0 border-gray-300 text-[#222] text-center px-4 md:px-5 lg:px-12 py-2 h-full text-[10px] md:text-[12px] xl:text-[14px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                        data-filter="japan">
+                        訪問看護事業
+                    </a>
+                    <a href="business-3.html"
+                        class="w-full md:w-auto filter-tab border-x-[1px] border-t-[1px] md:border-t-0 border-gray-300 text-[#222] text-center px-4 md:px-5 lg:px-12 py-2 h-full text-[10px] md:text-[12px] xl:text-[14px] cursor-pointer font-bold whitespace-nowrap transition-colors duration-300 select-none"
+                        data-filter="group">
+                        福祉用具・消耗品住宅リフォーム
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="w-full flex justify-center pt-10">
-        <div class="w-full max-w-[1440px] flex flex-col justify-center gap-6">
-            <div class="flex flex-col items-start">
-                <div class="flex flex-row">
-                    <div class="w-3 h-[32px] bg-[#9fc3c4] mr-3"></div>
-                    <span class="text-[#90babd] text-[20px] md:text-[21px] lg:text-[22px] font-bold leading-none">
-                        訪問看護サービス
+    <section class="w-full flex justify-center pt-10 md:px-12 lg:px-16 xl:px-20">
+        <div class="w-full max-w-[1200px] flex flex-col justify-center gap-6">
+            <div class="flex flex-col items-start px-6 md:px-0">
+                <div class="flex flex-row items-center">
+                    <div class="w-3 h-[40px] bg-[#88BEC0] mr-3"></div>
+                    <span
+                        class="text-[#88BEC0] text-[25px] md:text-[28px] lg:text-[32px] xl:text-[35px] font-bold leading-none">
+                        訪問介護サービス
                     </span>
                 </div>
-                <div class="flex flex-row">
-                    <div class="w-3 h-[32px] bg-gray-400 mr-3 font-bold"></div>
-                    <span class="text-[16px] text-[#333] font-bold mt-1 ml-[2px]">Visiting nursing care</span>
+                <div class="flex flex-row items-center">
+                    <div class="w-3 h-[40px] bg-gray-400 mr-3 font-bold"></div>
+                    <span class="text-[14px] text-black font-bold mt-1 ml-[2px]">Visiting nursing care</span>
                 </div>
             </div>
-            <div class="w-full bg-[#f6f0eb] flex flex-col py-6 gap-8">
+            <div class="w-full bg-[#f6f0eb] flex flex-col pb-6 pt-10 gap-8 px-4 md:px-12 lg:px-0">
                 <div
-                    class="w-full text-[#90babd] text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-none px-12">
-                    <h1 class="flex items-center gap-2">
-                        <span class="inline-block w-6 h-6 rounded-full bg-[#90babd]"></span>
-                        訪問介護サービス
+                    class="w-full text-[#88BEC0] text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-none lg:px-4 xl:px-12 ">
+                    <h1 class="flex items-center gap-2 text-[22px] md:text-[28px] lg:text-[28px] xl:text-[30px]">
+                        <span class="inline-block w-6 h-6 rounded-full bg-[#88BEC0]"></span>
+                        サービス内容
                     </h1>
                 </div>
-                <div class="w-full flex flex-col md:flex-row justify-between items-stretch">
-                    <div class="flex-1 px-16 flex items-center gap-8 border-r-[1px] border-gray-300">
-                        <div class="flex-1 ">
+                <div class="w-full flex flex-col lg:flex-row justify-between items-stretch gap-8 lg:gap-0">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col md:flex-row items-start gap-4 lg:border-r-[1px] border-gray-300">
+                        <div class="flex-1 flex flex-col justify-start gap-2 md:gap-6 lg:gap-0 xl:gap-4">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
-                                身体介助</div>
-                            <ul class="text-[#222] text-[15px] xl:text-[16px] font-bold space-y-1 pl-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                身体介助
+                            </div>
+                            <ul
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold space-y-1 xl:pl-2">
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    身体を拭き清潔を保つ支援
+                                    排泄や食事の支援
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    排泄・入浴・着曽えの介助
+                                    清拭・入浴・着替えのお手伝い
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    食事介助や体位変換、外出時の介助
+                                    体位変換や移乗、外出時の介助
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    服薬管理や健康のサポート
+                                    就寝前や起床時のサポート
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    経管栄養や吸引
+                                    服薬の見守り
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    立ち上がりや転倒防止のための見守り
+                                    自立支援や転倒防止のための見守り
                                 </li>
                             </ul>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business-physical.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/physical-assistance.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
-                    <div class="flex-1 px-16 flex items-center gap-8 border-l-[1px] border-gray-300">
-                        <div class="flex-1 ">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col md:flex-row items-start gap-4 lg:border-l-[1px] border-gray-300">
+                        <div class="flex-1 flex flex-col justify-start gap-2 md:gap-6 lg:gap-0 xl:gap-4">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
-                                身体介助</div>
-                            <ul class="text-[#222] text-[15px] xl:text-[16px] font-bold space-y-1 pl-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                生活援助
+                            </div>
+                            <ul
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold space-y-1 xl:pl-2">
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    身体を拭き清潔を保つ支援
+                                    掃除や洗濯
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    排泄・入浴・着曽えの介助
+                                    ベッドメイクや衣類の整理
+
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    食事介助や体位変換、外出時の介助
+                                    調理や配膳の補助
                                 </li>
                                 <li class="flex items-center">
                                     <span
                                         class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    服薬管理や健康のサポート
-                                </li>
-                                <li class="flex items-center">
-                                    <span
-                                        class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    経管栄養や吸引
-                                </li>
-                                <li class="flex items-center">
-                                    <span
-                                        class="mt-1 mr-2 inline-block w-[3px] aspect-[1] bg-[#222] rounded-full flex-shrink-0"></span>
-                                    立ち上がりや転倒防止のための見守り
+                                    日用品や薬の受け取り
                                 </li>
                             </ul>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business-physical.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/lifestyle-assistance.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full flex justify-center py-10">
-        <div class="w-full max-w-[1440px] flex flex-col justify-center gap-6">
-            <div class="w-full bg-[#f6f0eb] flex flex-col py-6 gap-8">
+    <section class="w-full flex justify-center py-10 md:px-12 lg:px-16 xl:px-32">
+        <div class="w-full max-w-[1200px] flex flex-col justify-center gap-6 ">
+            <div class="w-full bg-[#f6f0eb] flex flex-col pb-6 pt-10 gap-8  px-4 md:px-12 lg:px-0">
                 <div
-                    class="w-full text-[#90babd] text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-none px-12">
-                    <h1 class="flex items-center gap-2">
-                        <span class="inline-block w-6 h-6 rounded-full bg-[#90babd]"></span>
-                        専門的な知識と経験
+                    class="w-full text-[#88BEC0] text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-none lg:px-4 xl:px-12">
+                    <h1 class="flex items-center gap-2 text-[22px] md:text-[28px] lg:text-[28px] xl:text-[30px]">
+                        <span class="inline-block w-6 h-6 rounded-full bg-[#88BEC0]"></span>
+                        当社のサポート
                     </h1>
                 </div>
-                <div class="w-full flex flex-col md:flex-row justify-between items-stretch">
-                    <div class="flex-1 px-16 flex flex-col items-center gap-8 border-r-[1px] border-gray-300">
+                <div class="w-full flex flex-col lg:flex-row justify-between items-stretch gap-12 lg:gap-0">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col items-center gap-8 lg:border-r-[1px] border-gray-300">
                         <div class="flex-1">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
                                 専門的な知識と経験
                             </div>
-                            <p class="text-[#222] text-[15px] xl:text-[16px] font-bold leading-relaxed">
-                                国家資格を持つ介護福祉士が、これまでの介護現場で培った豊富な知識と技術<br>
-                                をもとに、安心・安全な支援を行います。身体面だけでなく生活習慣や社会参<br>
-                                加も見据え、総合的なサポートを提供します。
+                            <p
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold leading-[1.8]">
+                                国家資格を持つ介護福祉士を中心に、これまでの介護現場で培った豊富な知識
+                                と技術をもとに、安心・安全な支援を行います。身体面だけでなく生活習慣や
+                                社会参加も見据え、総合的なサポートを提供します。
                             </p>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business02.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/support01.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
-                    <div class="flex-1 px-16 flex flex-col items-center gap-8 border-l-[1px] border-gray-300">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col items-center gap-8 lg:border-l-[1px] border-gray-300">
                         <div class="flex-1">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
                                 一人ひとりに合わせたケア
                             </div>
-                            <p class="text-[#222] text-[15px] xl:text-[16px] font-bold leading-relaxed">
-                                利用者様の心身の状態や生活環境を細かく確認し、その方に最も適した支援方法<br>
-                                を考えます。日常の小さな不安や不便を減らし、暮らしやすさを重視したケアを<br>
+                            <p
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold leading-[1.8]">
+                                利用者様の心身の状態や生活環境を細かく確認し、その方に最も適した支援方法
+                                を考えます。日常の小さな不安や不便を減らし、暮らしやすさを重視したケアを
                                 実現します。
                             </p>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business02.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/support02.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
                 </div>
-                <div class="px-16 py-4">
-                    <hr class="w-full border-gray-300 border-[1px]">
+                <div class="lg:px-4 xl:px-10 lg:py-4">
+                    <hr class="w-full border-gray-300 border-[1px] hidden lg:block">
                 </div>
-                <div class="w-full flex flex-col md:flex-row justify-between items-stretch">
-                    <div class="flex-1 px-16 flex flex-col items-center gap-8 border-r-[1px] border-gray-300">
+                <div class="w-full flex flex-col lg:flex-row justify-between items-stretch gap-12 lg:gap-0">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col items-center gap-8 lg:border-r-[1px] border-gray-300">
                         <div class="flex-1">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
                                 安心できる対応力
                             </div>
-                            <p class="text-[#222] text-[15px] xl:text-[16px] font-bold leading-relaxed">
-                                介護福祉士は現場経験から幅広い状況に対応できる力を備えています。ご利<br>
-                                用者様やご家族が安心して日々を過ごせるよう、きめ細やかな支援を心がけ<br>
-                                ています。
+                            <p
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold leading-[1.8]">
+                                介護職員は現場経験から幅広い状況に対応できる力を備えています。ご利用者様や
+                                ご家族が安心して日々を過ごせるよう、きめ細やかな支援を心がけています。
                             </p>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business02.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/support03.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
-                    <div class="flex-1 px-16 flex flex-col items-center gap-8 border-l-[1px] border-gray-300">
+                    <div class="flex-1 lg:px-4 xl:px-10 flex flex-col items-center gap-8 lg:border-l-[1px] border-gray-300">
                         <div class="flex-1">
                             <div
-                                class="text-[#90babd] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
+                                class="text-[#88BEC0] text-[21px] md:text-[22px] lg:text-[20px] xl:text-[24px] font-bold mb-2">
                                 円滑なコミュニケーション
-
-
                             </div>
-                            <p class="text-[#222] text-[15px] xl:text-[16px] font-bold leading-relaxed">
-                                意思疎通が難しい方や不安を抱えている方に寄り添い、気持ちをくみ取りながら<br>
-                                丁寧に対応します。周囲の人との関係も大切にし、信頼感のある関わりを築いて<br>
+                            <p
+                                class="text-[#222] text-[14px] md:text-[14px] lg:text-[12px] xl:text-[14px] font-bold leading-[1.8]">
+                                意思疎通が難しい方や不安を抱えている方に寄り添い、気持ちをくみ取りながら
+                                丁寧に対応します。周囲の人との関係も大切にし、信頼感のある関わりを築いて
                                 いきます。
                             </p>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <img src="assets/images/business02.webp" alt="身体介助の様子" class="object-cover">
+                            <img src="assets/images/support04.webp" alt="身体介助の様子" class="object-cover">
                         </div>
                     </div>
                 </div>
@@ -511,7 +512,7 @@
 
     <footer class="w-full bg-[#88bec0] py-16 md:max-h-[415px]">
         <div
-            class="max-w-[1440px] w-full md:w-[700px] lg:w-full mx-auto px-12 md:px-4 lg:px-12 flex flex-col md:flex-row items-start gap-8">
+            class="max-w-[1200px] w-full md:w-[700px] lg:w-full mx-auto px-12 md:px-4 lg:px-12 flex flex-col md:flex-row items-start gap-8">
             <div class="w-full flex flex-col-reverse md:flex-row">
                 <div class="w-full md:w-[35%] flex">
                     <div class="w-full flex flex-col-reverse md:flex-col gap-4 min-w-[220px]">
