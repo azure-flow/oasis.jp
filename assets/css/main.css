@@ -101,3 +101,35 @@
         width: 90%;
     }
 }
+
+
+@keyframes scrollCircleMoveFade {
+    0% {
+        top: -15px;
+        opacity: 0;
+    }
+
+    10% {
+        top: -5px;
+        opacity: 1;
+    }
+
+    86% {
+        top: 80px;
+        opacity: 1;
+    }
+
+    98% {
+        top: 80px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+#scroll-circle {
+    animation: scrollCircleMoveFade 1.6s linear infinite;
+}

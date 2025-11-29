@@ -1,28 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // for scroll motion
-    const circle = document.getElementById('scroll-circle');
-    const line = document.getElementById('scroll-line');
+    // // for scroll motion
+    // const circle = document.getElementById('scroll-circle');
+    // const line = document.getElementById('scroll-line');
 
-    const circle_position = circle.getBoundingClientRect().top;
-    const header = document.querySelector('header');
-    const headerHeight = header ? header.offsetHeight : 0;
+    // const circle_position = circle.getBoundingClientRect().top;
+    // const header = document.querySelector('header');
+    // const headerHeight = header ? header.offsetHeight : 0;
 
-    const maxScroll = circle_position - headerHeight + 24;
+    // const maxScroll = circle_position - headerHeight + 24;
 
-    window.addEventListener('scroll', () => {
-        // const maxScroll = 600;
+    // window.addEventListener('scroll', () => {
+    //     // const maxScroll = 600;
 
-        console.log(maxScroll);
-        const scrollPercent = scrollY / maxScroll;
+    //     console.log(maxScroll);
+    //     const scrollPercent = scrollY / maxScroll;
 
-        const lineHeight = line.offsetHeight;
-        const circleHeight = circle.offsetHeight;
+    //     const lineHeight = line.offsetHeight;
+    //     const circleHeight = circle.offsetHeight;
 
-        const move = scrollPercent * (lineHeight - circleHeight);
+    //     const move = scrollPercent * (lineHeight - circleHeight);
 
-        circle.style.top = `${move}px`;
-    });
+    //     circle.style.top = `${move}px`;
+    // });
 
     // Haumburger Button to open menu on smartphone
 
