@@ -113,6 +113,16 @@
     </header>
     <div id="temp-header" class="h-[77px] md:h-[101.5px] lg:h-[127px] xl:h-[140.5px]"></div>
 
+    <div
+        class="absolute w-[45px] px-2 flex flex-col items-center space-y-1 z-40 top-[65vh] right-1 md:-right-[5px] lg:right-[10px] xl:right-4 overflow-hidden">
+        <p class="[writing-mode:vertical-rl] text-[8px] md:text-[10px] font-bold">SCROLL DOWN</p>
+        <div id="scroll-line" class="relative w-[2px] h-[80px] md:mr-[2px] bg-gray-400">
+            <div id="scroll-circle"
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white border-[8px] border-[#89bec1] scroll-circle transition-transform duration-200 ease-linear">
+            </div>
+        </div>
+    </div>
+    
     <section class="w-full bg-white border-gray-200 pt-3 px-8 md:px-12 lg:px-16 xl:px-32 pb-10 md:py-2 lg:py-3 xl:py-6">
         <div class="max-w-[1200px] w-full mx-auto flex flex-row items-center py-4">
             <nav class="flex items-start lg:space-x-8 space-x-4 text-[15px]">
